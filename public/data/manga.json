@@ -1,0 +1,47 @@
+[
+  {
+    "id": "samurai-no-michi",
+    "title": "（株）ペーパーカンパニー様",
+    "titleEn": "The Way of the Samurai",
+    "author": "商品名：ワンタッチボトル",
+    "genre": ["製品", "熊アート様作"],
+    "description": "江戸時代末期。腕一本で生き抜いてきた浪人・剣蔵は、ある日小さな村で悪徳代官の圧政に苦しむ民と出会う。剣と義の物語、ここに開幕。",
+    "coverImage": "/images/manga1/cover.jpg",
+    "pageCount": 2,
+    "pages": [
+      { "id": 1, "src": "/images/manga1/page1.jpg", "alt": "第1ページ：侍の道入" },
+      { "id": 2, "src": "/images/manga1/page2.jpg", "alt": "第2ページ：運命の出会い" }
+    ],
+    "updatedAt": "2025年4月"
+  },
+  {
+    "id": "cyber-requiem",
+    "title": "サイバー・レクイエム",
+    "titleEn": "Cyber Requiem",
+    "author": "あなたの名前",
+    "genre": ["SF", "サイバーパンク", "アクション"],
+    "description": "2089年、ネオ東京。天才ハッカーの少女・ルナは、都市を支配するAI管理組織「NEXUS」の陰謀を暴くため、デジタルとリアルの狭間を駆け抜ける。",
+    "coverImage": "/images/manga2/cover.jpg",
+    "pageCount": 2,
+    "pages": [
+      { "id": 1, "src": "/images/manga2/page1.jpg", "alt": "第1ページ：接続開始" },
+      { "id": 2, "src": "/images/manga2/page2.jpg", "alt": "第2ページ：逃走" }
+    ],
+    "updatedAt": "2025年3月"
+  },
+  {
+    "id": "mahoutsukai-gakuen",
+    "title": "魔法使い学園",
+    "titleEn": "Mage Academy",
+    "author": "あなたの名前",
+    "genre": ["ファンタジー", "学園", "魔法"],
+    "description": "魔法の才能ゼロと言われ続けた少年・蒼空が入学した「星詠魔法学院」。しかし彼が秘めた力は、世界の理を覆すほどのものだった——。",
+    "coverImage": "/images/manga3/cover.jpg",
+    "pageCount": 2,
+    "pages": [
+      { "id": 1, "src": "/images/manga3/page1.jpg", "alt": "第1ページ：入学の日" },
+      { "id": 2, "src": "/images/manga3/page2.jpg", "alt": "第2ページ：覚醒" }
+    ],
+    "updatedAt": "2025年2月"
+  }
+]
