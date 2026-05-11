@@ -1,5 +1,35 @@
 [
   {
+    "id": "gaibu01",
+    "title": "外部画像",
+    "titleEn": "The Way of the Samurai",
+    "author": "商品名：ワンタッチボトル",
+    "genre": ["製品", "熊アート様作"],
+    "description": "外部画像のテスト",
+    "coverImage": "https://pbs.twimg.com/media/HH98H1EbsAA-jJT?format=jpg",
+    "pageCount": 2,
+    "pages": [
+      { "id": 1, "src": "https://pbs.twimg.com/media/HH2-ao5a8AAHDNh?format=jpg", "alt": "第1ページ" },
+      { "id": 2, "src": "https://pbs.twimg.com/media/HH76faCaIAEljJS?format=jpg", "alt": "第2ページ" }
+    ],
+    "updatedAt": "2025年4月"
+  },
+  {
+    "id": "gaibu02",
+    "title": "外部画像2",
+    "titleEn": "The Way of the Samurai",
+    "author": "商品名：ワンタッチボトル",
+    "genre": ["製品", "熊アート様作"],
+    "description": "外部画像のテスト",
+    "coverImage": "https://pbs.twimg.com/media/HH8EUSbbwAAxKCC?format=jpg",
+    "pageCount": 2,
+    "pages": [
+      { "id": 1, "src": "https://pbs.twimg.com/media/HH_Zx5YacAAYxZX?format=jpg&name=small", "alt": "第1ページ" },
+      { "id": 2, "src": "https://pbs.twimg.com/media/HH7QaV9agAAhvze?format=jpg&name=large", "alt": "第2ページ" }
+    ],
+    "updatedAt": "2025年4月"
+  },
+  {
     "id": "samurai-no-michi",
     "title": "（株）ペーパーカンパニー様",
     "titleEn": "The Way of the Samurai",
