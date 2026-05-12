@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useEffect } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import type { Manga } from '@/lib/manga-data'
 import { ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut, BookOpen } from 'lucide-react'
 
@@ -61,8 +62,9 @@ export function MangaViewer({ manga }: MangaViewerProps) {
     >
       {/* Page image */}
       <div
-        className={`absolute inset-0 flex items-center justify-center transition-transform duration-300 ${isZoomed ? 'cursor-zoom-out' : 'cursor-zoom-in'}`}
-        onClick={() => setIsZoomed((z) => !z)}
+        // className={`absolute inset-0 flex items-center justify-center transition-transform duration-300 ${isZoomed ? 'cursor-zoom-out' : 'cursor-zoom-in'}`}
+        className={`absolute inset-0 flex items-center justify-center transition-transform duration-300 `}
+        // onClick={() => setIsZoomed((z) => !z)}   // 画像クリック時のイベント
       >
         <div
           className={`relative transition-all duration-300 ease-in-out ${
@@ -128,8 +130,15 @@ export function MangaViewer({ manga }: MangaViewerProps) {
           </a>
 
           <div className="flex items-center gap-2">
-            <BookOpen className="w-4 h-4 text-muted-foreground" />
-            <h1 className="text-sm font-bold text-foreground">{manga.title}</h1>
+            {/* <BookOpen className="w-4 h-4 text-muted-foreground" /> */}
+            {/* タイトルのリンク */}
+            <Link
+              href={`${manga.itemPage}`}
+              aria-label="商品ページ"
+              target="_blank"
+            >
+              <h1 className="text-sm font-bold text-foreground">{manga.title}</h1>
+            </Link>
           </div>
 
           <button
@@ -142,11 +151,22 @@ export function MangaViewer({ manga }: MangaViewerProps) {
         </div>
       </div>
 
+
       {/* Bottom bar */}
       <div
         className={`absolute bottom-0 left-0 right-0 z-20 transition-all duration-300 ${showUI ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'}`}
       >
         <div className="flex flex-col gap-3 px-4 py-4 bg-gradient-to-t from-black/80 to-transparent">
+
+          {/* Page info label */}
+          <div
+            className={`flex justify-center pointer-events-none transition-all duration-300 ${showUI ? 'opacity-100' : 'opacity-0'}`}
+          >
+            <p className="text-xs text-white/70 bg-black/50 backdrop-blur-sm px-3 py-1 rounded-full max-w-xs sm:max-w-sm text-center leading-relaxed">
+              {page.alt}
+            </p>
+          </div>
+
           {/* Page thumbnails */}
           <div className="flex justify-center gap-2 overflow-x-auto pb-1">
             {manga.pages.map((p, i) => (

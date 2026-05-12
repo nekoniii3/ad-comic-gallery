@@ -7,6 +7,7 @@
     "genre": ["製品", "熊アート様作"],
     "description": "外部画像のテスト",
     "coverImage": "https://pbs.twimg.com/media/HH98H1EbsAA-jJT?format=jpg",
+    "itemPage": "https://item.rakuten.co.jp/sawaicoffee-tea/gldslvbrz",
     "pageCount": 2,
     "pages": [
       { "id": 1, "src": "https://pbs.twimg.com/media/HH2-ao5a8AAHDNh?format=jpg", "alt": "第1ページ" },
@@ -22,6 +23,7 @@
     "genre": ["製品", "熊アート様作"],
     "description": "外部画像のテスト",
     "coverImage": "https://pbs.twimg.com/media/HH8EUSbbwAAxKCC?format=jpg",
+    "itemPage": "https://item.rakuten.co.jp/sawaicoffee-tea/gldslvbrz",
     "pageCount": 2,
     "pages": [
       { "id": 1, "src": "https://pbs.twimg.com/media/HH_Zx5YacAAYxZX?format=jpg&name=small", "alt": "第1ページ" },
@@ -37,6 +39,7 @@
     "genre": ["製品", "熊アート様作"],
     "description": "江戸時代末期。腕一本で生き抜いてきた浪人・剣蔵は、ある日小さな村で悪徳代官の圧政に苦しむ民と出会う。剣と義の物語、ここに開幕。",
     "coverImage": "/images/manga1/cover.jpg",
+    "itemPage": "https://item.rakuten.co.jp/sawaicoffee-tea/gldslvbrz",
     "pageCount": 2,
     "pages": [
       { "id": 1, "src": "/images/manga1/page1.jpg", "alt": "第1ページ：侍の道入" },
@@ -52,6 +55,7 @@
     "genre": ["SF", "サイバーパンク", "アクション"],
     "description": "2089年、ネオ東京。天才ハッカーの少女・ルナは、都市を支配するAI管理組織「NEXUS」の陰謀を暴くため、デジタルとリアルの狭間を駆け抜ける。",
     "coverImage": "/images/manga2/cover.jpg",
+    "itemPage": "https://item.rakuten.co.jp/sawaicoffee-tea/gldslvbrz",
     "pageCount": 2,
     "pages": [
       { "id": 1, "src": "/images/manga2/page1.jpg", "alt": "第1ページ：接続開始" },
@@ -67,6 +71,7 @@
     "genre": ["ファンタジー", "学園", "魔法"],
     "description": "魔法の才能ゼロと言われ続けた少年・蒼空が入学した「星詠魔法学院」。しかし彼が秘めた力は、世界の理を覆すほどのものだった——。",
     "coverImage": "/images/manga3/cover.jpg",
+    "itemPage": "https://item.rakuten.co.jp/sawaicoffee-tea/gldslvbrz",
     "pageCount": 2,
     "pages": [
       { "id": 1, "src": "/images/manga3/page1.jpg", "alt": "第1ページ：入学の日" },

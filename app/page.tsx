@@ -5,7 +5,6 @@ import { getMangaList, getTagList } from '@/lib/manga-data'
 export default function HomePage() {
   const mangaList = getMangaList()
   const tagList = getTagList()
-
  
   return (
     <div className="min-h-screen bg-background">

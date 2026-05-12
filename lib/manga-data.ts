@@ -15,6 +15,7 @@ export type Manga = {
   genre: string[]
   description: string
   coverImage: string
+  itemPage: string
   pageCount: number
   pages: MangaPage[]
   updatedAt: string

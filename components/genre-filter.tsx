@@ -27,8 +27,6 @@ export function GenreFilter({ tagList, mangaList }: GenreFilterProps) {
     [mangaList, activeGenre],
   )
 
-  console.log(tagList[0].name)
-
   return (
     <section className="px-4 pb-16">
       
@@ -74,7 +72,7 @@ export function GenreFilter({ tagList, mangaList }: GenreFilterProps) {
           </div>
           <div>
             <span className="text-muted-foreground text-sm justify-end">
-              {filtered.length} / {mangaList.length} 作品
+              {filtered.length} / {mangaList.length} 
             </span>
           </div>
         </div>
