@@ -119,17 +119,17 @@ export function MangaViewer({ manga }: MangaViewerProps) {
       <div
         className={`absolute top-0 left-0 right-0 z-20 transition-all duration-300 ${showUI ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'}`}
       >
-        <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-b from-black/80 to-transparent">
+        <div className="flex items-center px-4 py-3 bg-gradient-to-b from-black/80 to-transparent">
           <a
             href="/"
             className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
             aria-label="一覧に戻る"
           >
             <X className="w-5 h-5" />
-            <span className="text-sm font-medium hidden sm:inline">閉じる</span>
+            <span className="text-sm font-medium hidden sm:inline flex-1">閉じる</span>
           </a>
 
-          <div className="flex items-center gap-2">
+          <div className="absolute left-1/2 -translate-x-1/2 gap-2">
             {/* <BookOpen className="w-4 h-4 text-muted-foreground" /> */}
             {/* タイトルのリンク */}
             <Link
@@ -143,7 +143,7 @@ export function MangaViewer({ manga }: MangaViewerProps) {
 
           <button
             onClick={(e) => { e.stopPropagation(); setIsZoomed((z) => !z) }}
-            className="text-foreground hover:text-primary transition-colors p-1"
+            className="text-foreground hover:text-primary transition-colors p-1 ml-auto"
             aria-label={isZoomed ? 'ズームアウト' : 'ズームイン'}
           >
             {isZoomed ? <ZoomOut className="w-5 h-5" /> : <ZoomIn className="w-5 h-5" />}
