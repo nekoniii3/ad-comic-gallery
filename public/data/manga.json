@@ -1,82 +1,921 @@
 [
-  {
-    "id": "gaibu01",
-    "title": "外部画像",
-    "titleEn": "The Way of the Samurai",
-    "author": "商品名：ワンタッチボトル",
-    "genre": ["製品", "熊アート様作"],
-    "description": "外部画像のテスト",
-    "coverImage": "https://pbs.twimg.com/media/HH98H1EbsAA-jJT?format=jpg",
-    "itemPage": "https://item.rakuten.co.jp/sawaicoffee-tea/gldslvbrz",
-    "pageCount": 2,
-    "pages": [
-      { "id": 1, "src": "https://pbs.twimg.com/media/HH2-ao5a8AAHDNh?format=jpg", "alt": "第1ページ" },
-      { "id": 2, "src": "https://pbs.twimg.com/media/HH76faCaIAEljJS?format=jpg", "alt": "第2ページ" }
-    ],
-    "updatedAt": "2025年4月"
-  },
-  {
-    "id": "gaibu02",
-    "title": "外部画像2",
-    "titleEn": "The Way of the Samurai",
-    "author": "商品名：ワンタッチボトル",
-    "genre": ["製品", "熊アート様作"],
-    "description": "外部画像のテスト",
-    "coverImage": "https://pbs.twimg.com/media/HH8EUSbbwAAxKCC?format=jpg",
-    "itemPage": "https://item.rakuten.co.jp/sawaicoffee-tea/gldslvbrz",
-    "pageCount": 2,
-    "pages": [
-      { "id": 1, "src": "https://pbs.twimg.com/media/HH_Zx5YacAAYxZX?format=jpg&name=small", "alt": "第1ページ" },
-      { "id": 2, "src": "https://pbs.twimg.com/media/HH7QaV9agAAhvze?format=jpg&name=large", "alt": "第2ページ" }
-    ],
-    "updatedAt": "2025年4月"
-  },
-  {
-    "id": "samurai-no-michi",
-    "title": "（株）ペーパーカンパニー様",
-    "titleEn": "The Way of the Samurai",
-    "author": "商品名：ワンタッチボトル",
-    "genre": ["製品", "熊アート様作"],
-    "description": "江戸時代末期。腕一本で生き抜いてきた浪人・剣蔵は、ある日小さな村で悪徳代官の圧政に苦しむ民と出会う。剣と義の物語、ここに開幕。",
-    "coverImage": "/images/manga1/cover.jpg",
-    "itemPage": "https://item.rakuten.co.jp/sawaicoffee-tea/gldslvbrz",
-    "pageCount": 2,
-    "pages": [
-      { "id": 1, "src": "/images/manga1/page1.jpg", "alt": "第1ページ：侍の道入" },
-      { "id": 2, "src": "/images/manga1/page2.jpg", "alt": "第2ページ：運命の出会い" }
-    ],
-    "updatedAt": "2025年4月"
-  },
-  {
-    "id": "cyber-requiem",
-    "title": "サイバー・レクイエム",
-    "titleEn": "Cyber Requiem",
-    "author": "あなたの名前",
-    "genre": ["SF", "サイバーパンク", "アクション"],
-    "description": "2089年、ネオ東京。天才ハッカーの少女・ルナは、都市を支配するAI管理組織「NEXUS」の陰謀を暴くため、デジタルとリアルの狭間を駆け抜ける。",
-    "coverImage": "/images/manga2/cover.jpg",
-    "itemPage": "https://item.rakuten.co.jp/sawaicoffee-tea/gldslvbrz",
-    "pageCount": 2,
-    "pages": [
-      { "id": 1, "src": "/images/manga2/page1.jpg", "alt": "第1ページ：接続開始" },
-      { "id": 2, "src": "/images/manga2/page2.jpg", "alt": "第2ページ：逃走" }
-    ],
-    "updatedAt": "2025年3月"
-  },
-  {
-    "id": "mahoutsukai-gakuen",
-    "title": "魔法使い学園",
-    "titleEn": "Mage Academy",
-    "author": "あなたの名前",
-    "genre": ["ファンタジー", "学園", "魔法"],
-    "description": "魔法の才能ゼロと言われ続けた少年・蒼空が入学した「星詠魔法学院」。しかし彼が秘めた力は、世界の理を覆すほどのものだった——。",
-    "coverImage": "/images/manga3/cover.jpg",
-    "itemPage": "https://item.rakuten.co.jp/sawaicoffee-tea/gldslvbrz",
-    "pageCount": 2,
-    "pages": [
-      { "id": 1, "src": "/images/manga3/page1.jpg", "alt": "第1ページ：入学の日" },
-      { "id": 2, "src": "/images/manga3/page2.jpg", "alt": "第2ページ：覚醒" }
-    ],
-    "updatedAt": "2025年2月"
-  }
+	{
+		"id": "bag",
+		"title": "ハンドメイドトートバッグ",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "ブラウン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png"
+			},
+			{
+				"alt": "ブルー",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/bl.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "pouch",
+		"title": "ハンドメイドポーチ",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "ブルー",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/2.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/3.png"
+			},
+			{
+				"alt": "ピンク",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/4.png"
+			}
+		]
+	},
+	{
+		"id": "dum1",
+		"title": "ダミー1",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "ブラウン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png"
+			},
+			{
+				"alt": "ブルー",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/bl.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum2",
+		"title": "ダミー2",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "ブルー",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/2.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/3.png"
+			},
+			{
+				"alt": "ピンク",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/4.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "dum3",
+		"title": "ダミー3",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "ブラウン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png"
+			},
+			{
+				"alt": "ブルー",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/bl.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "dum4",
+		"title": "ダミー4",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "ブルー",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png"
+			},
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			},
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "dum5",
+		"title": "ダミー5",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/2.png"
+			}
+		]
+	},
+	{
+		"id": "dum6",
+		"title": "ダミー6",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/3.png"
+			}
+		]
+	},
+	{
+		"id": "dum7",
+		"title": "ダミー7",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "ピンク",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/4.png"
+			}
+		]
+	},
+	{
+		"id": "dum8",
+		"title": "ダミー8",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "ブラウン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png"
+			}
+		]
+	},
+	{
+		"id": "dum9",
+		"title": "ダミー9",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "ブルー",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/bl.png"
+			}
+		]
+	},
+	{
+		"id": "dum10",
+		"title": "ダミー10",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum11",
+		"title": "ダミー11",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "dum12",
+		"title": "ダミー12",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum13",
+		"title": "ダミー13",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "dum14",
+		"title": "ダミー14",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum15",
+		"title": "ダミー15",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "dum16",
+		"title": "ダミー16",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum17",
+		"title": "ダミー17",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum18",
+		"title": "ダミー18",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "dum19",
+		"title": "ダミー19",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum20",
+		"title": "ダミー20",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "dum21",
+		"title": "ダミー21",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum22",
+		"title": "ダミー22",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "dum23",
+		"title": "ダミー23",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum24",
+		"title": "ダミー24",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum25",
+		"title": "ダミー25",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "dum26",
+		"title": "ダミー26",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum27",
+		"title": "ダミー27",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "dum28",
+		"title": "ダミー28",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum29",
+		"title": "ダミー29",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "dum30",
+		"title": "ダミー30",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum31",
+		"title": "ダミー31",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "dum32",
+		"title": "ダミー32",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum33",
+		"title": "ダミー33",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "dum34",
+		"title": "ダミー34",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum35",
+		"title": "ダミー35",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "dum36",
+		"title": "ダミー36",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum37",
+		"title": "ダミー37",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "dum38",
+		"title": "ダミー38",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum39",
+		"title": "ダミー39",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	},
+	{
+		"id": "dum40",
+		"title": "ダミー40",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "パープル",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		]
+	},
+	{
+		"id": "dum41",
+		"title": "ダミー41",
+		"titleEn": "",
+		"itemPage": "https://www.amazon.co.jp/",
+		"author": "",
+		"description": "",
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "グリーン",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			}
+		]
+	}
 ]

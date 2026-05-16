@@ -1,20 +1,28 @@
 import { GenreFilter } from '@/components/genre-filter'
 import { SiteHeader } from '@/components/site-header'
 import { getMangaList, getTagList } from '@/lib/manga-data'
+import FloatingParticles from "@/components/backgrounds/FloatingParticles";
+import AuroraBackground from "@/components/backgrounds/AuroraBackground"
+import Natural from "@/components/backgrounds/Natural"
+import WarmBeige from "@/components/backgrounds/WarmBeige"
 
 export default function HomePage() {
   const mangaList = getMangaList()
   const tagList = getTagList()
  
   return (
-    <div className="min-h-screen bg-background">
+    <div className="h-screen">
+                {/* <div className="absolute inset-0 h-full"> */}
+      {/* 背景指定 */}
+      {/* <WarmBeige /> */}
+          {/* </div> */}
       <SiteHeader />
 
       <main>
         {/* Hero */}
         <section className="relative py-16 px-4 overflow-hidden">
           {/* Background decoration */}
-          <div
+          {/* <div
             className="absolute inset-0 opacity-5"
             style={{
               backgroundImage: `repeating-linear-gradient(
@@ -31,7 +39,7 @@ export default function HomePage() {
                 oklch(0.65 0.22 25) 41px
               )`,
             }}
-          />
+          /> */}
 
           <div className="relative max-w-6xl mx-auto text-center">
             {/* <p className="text-primary text-xs tracking-[0.4em] uppercase font-bold mb-3">
@@ -51,7 +59,8 @@ export default function HomePage() {
         </section>
 
         {/* Manga Grid with genre filter */}
-        <GenreFilter tagList={tagList} mangaList={mangaList} />
+        {/* <GenreFilter tagList={tagList} mangaList={mangaList} /> */}
+        <GenreFilter mangaList={mangaList} />
       </main>
 
       {/* Footer */}
@@ -76,6 +85,6 @@ export default function HomePage() {
           </p>
         </div>
       </footer>
-    </div>
+      </div>
   )
 }

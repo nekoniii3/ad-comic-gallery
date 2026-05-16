@@ -36,7 +36,7 @@ export function MangaCard({ manga }: MangaCardProps) {
         {/* Hover: Read button */}
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <span className="bg-primary text-primary-foreground text-sm font-bold px-4 py-2 rounded-full">
-            読む
+            開く
           </span>
         </div>
       </Link>
@@ -48,7 +48,7 @@ export function MangaCard({ manga }: MangaCardProps) {
         </h2>
         <p className="text-muted-foreground text-xs mb-2">{manga.author}</p>
         <div className="flex flex-wrap gap-1">
-          {manga.genre.slice(0, 2).map((g) => (
+          {manga.tag.slice(0, 2).map((g) => (
             <span
               key={g}
               className="text-[10px] px-2 py-0.5 rounded-full bg-secondary text-secondary-foreground border border-border"

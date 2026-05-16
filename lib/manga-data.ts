@@ -3,7 +3,7 @@ import fs from 'fs'
 
 export type MangaPage = {
   id: number
-  src: string
+  imgPath: string
   alt: string
 }
 
@@ -12,12 +12,12 @@ export type Manga = {
   title: string
   titleEn: string
   author: string
-  genre: string[]
+  tag: string[]
   description: string
   coverImage: string
   itemPage: string
-  pageCount: number
-  pages: MangaPage[]
+  imageCount: number
+  imageData: MangaPage[]
   updatedAt: string
 }
 

@@ -16,7 +16,7 @@ export function MangaViewer({ manga }: MangaViewerProps) {
   const [showUI, setShowUI] = useState(true)
   const [uiTimeout, setUiTimeout] = useState<ReturnType<typeof setTimeout> | null>(null)
 
-  const totalPages = manga.pages.length
+  const totalPages = manga.imageData.length
 
   const goToPrev = useCallback(() => {
     setCurrentPage((p) => Math.max(0, p - 1))
@@ -52,7 +52,9 @@ export function MangaViewer({ manga }: MangaViewerProps) {
     return () => window.removeEventListener('keydown', handler)
   }, [goToPrev, goToNext])
 
-  const page = manga.pages[currentPage]
+  const page = manga.imageData[currentPage]
+
+  // console.log(page)
 
   return (
     <div
@@ -74,8 +76,8 @@ export function MangaViewer({ manga }: MangaViewerProps) {
           }`}
         >
           <Image
-            key={page.src}
-            src={page.src}
+            key={page.imgPath}
+            src={page.imgPath}
             alt={page.alt}
             fill={!isZoomed}
             width={isZoomed ? 1200 : undefined}
@@ -169,9 +171,10 @@ export function MangaViewer({ manga }: MangaViewerProps) {
 
           {/* Page thumbnails */}
           <div className="flex justify-center gap-2 overflow-x-auto pb-1">
-            {manga.pages.map((p, i) => (
+            {manga.imageData.map((p, i) => (
               <button
-                key={p.id}
+                // key={p.id}
+                key={i}
                 onClick={(e) => { e.stopPropagation(); setCurrentPage(i); setIsZoomed(false) }}
                 className={`relative flex-shrink-0 w-10 h-14 rounded overflow-hidden border-2 transition-all ${
                   i === currentPage ? 'border-primary scale-110' : 'border-border opacity-60 hover:opacity-100'
@@ -179,7 +182,7 @@ export function MangaViewer({ manga }: MangaViewerProps) {
                 aria-label={`${i + 1}ページ目`}
               >
                 <Image
-                  src={p.src}
+                  src={p.imgPath}
                   alt={p.alt}
                   fill
                   className="object-cover"
