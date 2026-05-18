@@ -71,7 +71,7 @@ export default async function MangaDetailPage({ params }: Props) {
             </div>
 
             <div className="flex flex-wrap gap-2">
-              {manga.genre.map((g) => (
+              {manga.tag.map((g) => (
                 <span
                   key={g}
                   className="text-xs px-3 py-1 rounded-full bg-secondary text-secondary-foreground border border-border"
@@ -86,7 +86,7 @@ export default async function MangaDetailPage({ params }: Props) {
             </p>
 
             <div className="flex items-center gap-4 text-sm text-muted-foreground">
-              <span>{manga.pageCount}ページ</span>
+              <span>{manga.imageCount}ページ</span>
               <span>最終更新: {manga.updatedAt}</span>
             </div>
 
@@ -108,14 +108,14 @@ export default async function MangaDetailPage({ params }: Props) {
             ページ一覧
           </h2>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
-            {manga.pages.map((page, i) => (
+            {manga.imageData.map((page, i) => (
               <Link
                 key={page.id}
                 href={`/manga/${manga.id}/read?page=${i + 1}`}
                 className="group relative aspect-[2/3] rounded overflow-hidden border border-border hover:border-primary transition-all"
               >
                 <Image
-                  src={page.src}
+                  src={page.imgPath}
                   alt={page.alt}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
