@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ja" className="bg-background">
+    <html lang="ja" className="">
       <body className={`${notoSansJP.variable} ${notoSerifJP.variable} font-sans antialiased`}>
         {children}
       </body>

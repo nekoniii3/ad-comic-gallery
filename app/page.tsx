@@ -5,17 +5,18 @@ import FloatingParticles from "@/components/backgrounds/FloatingParticles";
 import AuroraBackground from "@/components/backgrounds/AuroraBackground"
 import Natural from "@/components/backgrounds/Natural"
 import WarmBeige from "@/components/backgrounds/WarmBeige"
+// import BackgroundScene from "@/components/backgrounds/background-scene"
 
 export default function HomePage() {
   const mangaList = getMangaList()
   const tagList = getTagList()
  
   return (
-    <div className="h-screen">
-                {/* <div className="absolute inset-0 h-full"> */}
+    <div>
       {/* 背景指定 */}
-      {/* <WarmBeige /> */}
-          {/* </div> */}
+      {/* <AuroraBackground /> */}
+      {/* <Natural /> */}
+      <WarmBeige />
       <SiteHeader />
 
       <main>

@@ -3,7 +3,7 @@
 export default function AuroraBackground() {
   return (
     <div
-      className="fixed inset-0 overflow-hidden"
+      className="fixed inset-0 min-h-screen w-full"
       style={{ background: "#0a0a12" }}
     >
       {/* Aurora layers */}

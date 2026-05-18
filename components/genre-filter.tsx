@@ -74,11 +74,11 @@ export function GenreFilter({ mangaList }: GenreFilterProps) {
   }, [totalPages, currentPage])
 
   return (
-    <section className="px-4 pb-16">
+    <section className="px-4 pb-16 z-1000">
       <div className="max-w-6xl mx-auto">
         {/* Header row */}
         <div className="flex items-center justify-between mb-5">
-          <h2 className="text-foreground font-bold text-lg flex items-center gap-2">
+          <h2 className="text-foreground text-white font-bold text-lg flex items-center gap-2">
             <span className="w-1 h-5 bg-primary rounded-full inline-block" />
             全作品
           </h2>
@@ -157,7 +157,7 @@ export function GenreFilter({ mangaList }: GenreFilterProps) {
                   className={`w-9 h-9 rounded-lg border text-sm font-medium transition-colors duration-150 ${
                     p === currentPage
                       ? 'bg-primary text-primary-foreground border-primary'
-                      : 'border-border text-muted-foreground hover:border-primary hover:text-foreground cursor-pointer'
+                      : 'border-black text-muted-foreground hover:border-primary hover:text-foreground cursor-pointer'
                   }`}
                 >
                   {p}

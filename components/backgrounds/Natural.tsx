@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 
 export default function Natural() {
   return (
-    <div className="fixed inset-0 overflow-hidden bg-[#f8f5ef] text-black">
+    <div className="fixed inset-0 -z-10 bg-[#f8f5ef] text-black">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-24 -left-24 w-80 h-80 bg-orange-200 rounded-full mix-blend-multiply blur-2xl animate-bounce"></div>
         <div className="absolute top-20 right-10 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply blur-2xl animate-pulse"></div>

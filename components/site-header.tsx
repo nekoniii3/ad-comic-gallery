@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export function SiteHeader() {
   return (
-    <header className="top-0 z-50 backdrop-blur-md">
+    <header className="top-0 z-50 backdrop-blur-none">
       <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           {/* Logo mark */}
