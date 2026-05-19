@@ -4,22 +4,31 @@ import { useMemo, useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { MangaCard } from '@/components/manga-card'
 import type { Manga } from '@/lib/manga-data'
+import WarmBeige, { partsColor } from "@/components/backgrounds/WarmBeige"
+import { cn } from "@/lib/utils"
 
 const PAGE_SIZE = 12
 
+const colorTagSelected = partsColor.tagSelected
+
+console.log(colorTagSelected)
+
 type GenreFilterProps = {
   mangaList: Manga[]
+  tagList: string[]
 }
 
-export function GenreFilter({ mangaList }: GenreFilterProps) {
+export function GenreFilter({ mangaList, tagList }: GenreFilterProps) {
   const [activeGenre, setActiveGenre] = useState<string | null>(null)
   const [currentPage, setCurrentPage] = useState(1)
 
-  const allGenres = useMemo(() => {
-    const genreSet = new Set<string>()
-    mangaList.forEach((manga) => manga.tag.forEach((g) => genreSet.add(g)))
-    return Array.from(genreSet).sort()
-  }, [mangaList])
+  console.log(tagList)
+
+  // const allGenres = useMemo(() => {
+  //   const genreSet = new Set<string>()
+  //   mangaList.forEach((manga) => manga.tag.forEach((g) => genreSet.add(g)))
+  //   return Array.from(genreSet).sort()
+  // }, [mangaList])
 
   const filtered = useMemo(
     () =>
@@ -30,8 +39,6 @@ export function GenreFilter({ mangaList }: GenreFilterProps) {
   )
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE))
-
-  console.log(totalPages)
 
   const paginated = useMemo(() => {
     const start = (currentPage - 1) * PAGE_SIZE
@@ -48,19 +55,6 @@ export function GenreFilter({ mangaList }: GenreFilterProps) {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
-  // Generate page number buttons: always show first, last, current ±1, with ellipsis
-  // const pageNumbers = useMemo(() => {
-  //   if (totalPages <= 3) return Array.from({ length: totalPages }, (_, i) => i + 1)
-  //   const pages: (number | '...')[] = []
-  //   const range = new Set([1, totalPages, currentPage - 1, currentPage, currentPage + 1].filter((p) => p >= 1 && p <= totalPages))
-  //   const sorted = Array.from(range).sort((a, b) => a - b)
-  //   sorted.forEach((p, i) => {
-  //     if (i > 0 && p - sorted[i - 1] > 1) pages.push('...')
-  //     pages.push(p)
-  //   })
-  //   return pages
-  // }, [totalPages, currentPage])
-
   const pageNumbers = useMemo(() => {
     if (totalPages <= 3) return Array.from({ length: totalPages }, (_, i) => i + 1)
     const pages: (number | '...')[] = [1]
@@ -76,39 +70,28 @@ export function GenreFilter({ mangaList }: GenreFilterProps) {
   return (
     <section className="px-4 pb-16 z-1000">
       <div className="max-w-6xl mx-auto">
-        {/* Header row */}
-        <div className="flex items-center justify-between mb-5">
-          <h2 className="text-foreground text-white font-bold text-lg flex items-center gap-2">
-            <span className="w-1 h-5 bg-primary rounded-full inline-block" />
-            全作品
-          </h2>
-          <span className="text-muted-foreground text-sm">
-            {filtered.length} / {mangaList.length} 作品
-          </span>
-        </div>
-
         {/* Genre tags */}
         <div className="flex flex-wrap gap-2 mb-7" role="group" aria-label="ジャンルで絞り込む">
           <button
             onClick={() => handleGenreChange(null)}
-            className={`text-xs px-3 py-1.5 rounded-full border transition-colors duration-150 font-medium ${
-              activeGenre === null
-                ? 'bg-primary text-primary-foreground border-primary'
-                : 'bg-transparent text-muted-foreground border-border hover:border-primary hover:text-foreground'
-            }`}
+            className={cn(`text-xs px-3 py-1.5 rounded-full border transition-colors duration-150 font-medium`
+              , activeGenre === null 
+              ? colorTagSelected : "bg-white text-black hover:border-primary hover:text-foreground")}
             aria-pressed={activeGenre === null}
           >
             すべて
           </button>
-          {allGenres.map((genre) => (
+          {tagList.map((genre) => (
             <button
               key={genre}
               onClick={() => handleGenreChange(activeGenre === genre ? null : genre)}
-              className={`text-xs px-3 py-1.5 rounded-full border transition-colors duration-150 font-medium ${
-                activeGenre === genre
-                  ? 'bg-primary text-primary-foreground border-primary'
-                  : 'bg-transparent text-muted-foreground border-border hover:border-primary hover:text-foreground'
-              }`}
+              className={cn(`text-xs px-3 py-1.5 rounded-full border transition-colors duration-150 font-medium`
+              , activeGenre === genre 
+              ? colorTagSelected : "bg-white text-black hover:border-primary hover:text-foreground")}
+              //   activeGenre === genre
+              //     ? 'bg-primary text-primary-foreground border-primary'
+              //     : 'bg-white text-black border-border hover:text-foreground'
+              // }`}
               aria-pressed={activeGenre === genre}
             >
               {genre}
@@ -128,7 +111,12 @@ export function GenreFilter({ mangaList }: GenreFilterProps) {
             該当する作品はありません
           </p>
         )}
-
+        <div className="flex items-center justify-end my-5">
+          <span className="text-muted-foreground text-sm">
+            {/* {filtered.length} / {mangaList.length} 作品 */}
+            全 {filtered.length} 作品
+          </span>
+        </div>
         {/* Pagination */}
         {totalPages > 1 && (
           <nav

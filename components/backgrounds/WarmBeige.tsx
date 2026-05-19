@@ -8,6 +8,14 @@ const bgStyle = {
         "repeating-linear-gradient(45deg, rgba(210,185,155,.13) 0px, rgba(210,185,155,.13) 1px, transparent 1px, transparent 14px), repeating-linear-gradient(-45deg, rgba(210,185,155,.13) 0px, rgba(210,185,155,.13) 1px, transparent 1px, transparent 14px)",
     }
 
+export interface PartsColor {
+    tagSelected:string
+}
+
+export const partsColor: PartsColor = {
+  tagSelected: "bg-amber-800",
+};
+
 export default function WarmBeige() {
   return (
     <div className="fixed inset-0 -z-10 h-full w-full"

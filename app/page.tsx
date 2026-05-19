@@ -47,7 +47,7 @@ export default function HomePage() {
               Original Works
             </p> */}
             <h1 className="font-black text-4xl md:text-6xl text-foreground leading-tight mb-4 text-balance">
-              ネコにいさんチャンネル
+              ハンドメイド
               <br />
               <span className="text-primary">制作漫画ギャラリー</span>
             </h1>
@@ -61,7 +61,7 @@ export default function HomePage() {
 
         {/* Manga Grid with genre filter */}
         {/* <GenreFilter tagList={tagList} mangaList={mangaList} /> */}
-        <GenreFilter mangaList={mangaList} />
+        <GenreFilter mangaList={mangaList} tagList={tagList}/>
       </main>
 
       {/* Footer */}

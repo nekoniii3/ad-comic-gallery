@@ -39,8 +39,13 @@ export function getMangaById(id: string): Manga | undefined {
   return getMangaList().find((m) => m.id === id)
 }
 
-export function getTagList(): Tag[] {
+export function getTagList(): string[] {
   const filePath = path.join(process.cwd(), 'public', 'data', 'tag.json')
   const raw = fs.readFileSync(filePath, 'utf-8')
-  return JSON.parse(raw) as Tag[]
+  // console.log(JSON.parse(raw))
+  const tagList = JSON.parse(raw).map(function(item: any){
+      return item["name"];
+  })
+  // console.log(tagList)
+  return tagList
 }
