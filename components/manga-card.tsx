@@ -10,7 +10,7 @@ type MangaCardProps = {
 
 export function MangaCard({ manga }: MangaCardProps) {
   return (
-    <div className="group relative overflow-hidden rounded-lg bg-card border border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_oklch(0.65_0.22_25_/_0.3)]">
+    <div className="group relative overflow-hidden rounded-lg bg-orange-100 border border-border hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_oklch(0.65_0.22_25_/_0.3)]">
       {/* Cover image — clicking anywhere on the image goes straight to the reader */}
       <Link
         href={`/manga/${manga.id}/read`}
@@ -43,7 +43,7 @@ export function MangaCard({ manga }: MangaCardProps) {
 
       {/* Info */}
       <div className="p-3">
-        <h2 className="text-foreground font-bold text-sm leading-tight mb-1 text-balance">
+        <h2 className="text-yellow-800 font-bold text-sm leading-tight mb-1 text-balance">
           {manga.title}
         </h2>
         <p className="text-muted-foreground text-xs mb-2">{manga.author}</p>

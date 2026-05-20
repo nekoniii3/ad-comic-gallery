@@ -9,11 +9,11 @@ const bgStyle = {
     }
 
 export interface PartsColor {
-    tagSelected:string
+    bgSelected: string
 }
 
 export const partsColor: PartsColor = {
-  tagSelected: "bg-amber-800",
+  bgSelected: "bg-amber-800",
 };
 
 export default function WarmBeige() {

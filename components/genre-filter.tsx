@@ -9,9 +9,7 @@ import { cn } from "@/lib/utils"
 
 const PAGE_SIZE = 12
 
-const colorTagSelected = partsColor.tagSelected
-
-console.log(colorTagSelected)
+const bgColorSelected = partsColor.bgSelected
 
 type GenreFilterProps = {
   mangaList: Manga[]
@@ -22,13 +20,6 @@ export function GenreFilter({ mangaList, tagList }: GenreFilterProps) {
   const [activeGenre, setActiveGenre] = useState<string | null>(null)
   const [currentPage, setCurrentPage] = useState(1)
 
-  console.log(tagList)
-
-  // const allGenres = useMemo(() => {
-  //   const genreSet = new Set<string>()
-  //   mangaList.forEach((manga) => manga.tag.forEach((g) => genreSet.add(g)))
-  //   return Array.from(genreSet).sort()
-  // }, [mangaList])
 
   const filtered = useMemo(
     () =>
@@ -38,6 +29,9 @@ export function GenreFilter({ mangaList, tagList }: GenreFilterProps) {
     [mangaList, activeGenre],
   )
 
+  
+  console.log(filtered)
+  
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE))
 
   const paginated = useMemo(() => {
@@ -76,7 +70,7 @@ export function GenreFilter({ mangaList, tagList }: GenreFilterProps) {
             onClick={() => handleGenreChange(null)}
             className={cn(`text-xs px-3 py-1.5 rounded-full border transition-colors duration-150 font-medium`
               , activeGenre === null 
-              ? colorTagSelected : "bg-white text-black hover:border-primary hover:text-foreground")}
+              ? bgColorSelected : "bg-white text-black hover:border-primary hover:text-foreground")}
             aria-pressed={activeGenre === null}
           >
             すべて
@@ -87,7 +81,7 @@ export function GenreFilter({ mangaList, tagList }: GenreFilterProps) {
               onClick={() => handleGenreChange(activeGenre === genre ? null : genre)}
               className={cn(`text-xs px-3 py-1.5 rounded-full border transition-colors duration-150 font-medium`
               , activeGenre === genre 
-              ? colorTagSelected : "bg-white text-black hover:border-primary hover:text-foreground")}
+              ? bgColorSelected : "bg-white text-black hover:border-primary hover:text-foreground")}
               //   activeGenre === genre
               //     ? 'bg-primary text-primary-foreground border-primary'
               //     : 'bg-white text-black border-border hover:text-foreground'
@@ -142,11 +136,11 @@ export function GenreFilter({ mangaList, tagList }: GenreFilterProps) {
                   key={p}
                   onClick={() => handlePage(p)}
                   aria-current={p === currentPage ? 'page' : undefined}
-                  className={`w-9 h-9 rounded-lg border text-sm font-medium transition-colors duration-150 ${
-                    p === currentPage
-                      ? 'bg-primary text-primary-foreground border-primary'
-                      : 'border-black text-muted-foreground hover:border-primary hover:text-foreground cursor-pointer'
-                  }`}
+                  className={cn("w-9 h-9 rounded-lg border text-sm font-medium transition-colors duration-150"
+                      , p === currentPage
+                      ? bgColorSelected
+                      : 'border-black text-black hover:border-primary hover:text-foreground cursor-pointer'
+                  )}
                 >
                   {p}
                 </button>

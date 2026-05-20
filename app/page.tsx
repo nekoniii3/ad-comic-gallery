@@ -7,8 +7,8 @@ import Natural from "@/components/backgrounds/Natural"
 import WarmBeige from "@/components/backgrounds/WarmBeige"
 // import BackgroundScene from "@/components/backgrounds/background-scene"
 
-export default function HomePage() {
-  const mangaList = getMangaList()
+export default async function HomePage() {
+  const mangaList = await getMangaList()
   const tagList = getTagList()
  
   return (
@@ -46,10 +46,10 @@ export default function HomePage() {
             {/* <p className="text-primary text-xs tracking-[0.4em] uppercase font-bold mb-3">
               Original Works
             </p> */}
-            <h1 className="font-black text-4xl md:text-6xl text-foreground leading-tight mb-4 text-balance">
-              ハンドメイド
+            <h1 className="font-black text-4xl md:text-6xl text-black leading-tight mb-4 text-balance">
+              私のハンドメイド
               <br />
-              <span className="text-primary">制作漫画ギャラリー</span>
+              <span className="text-primary">作品ギャラリー</span>
             </h1>
             <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto leading-relaxed">
               オリジナル漫画作品をご覧ください。
