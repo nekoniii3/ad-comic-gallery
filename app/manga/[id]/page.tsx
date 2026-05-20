@@ -12,7 +12,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params
-  const manga = getMangaById(id)
+  const manga = await getMangaById(id)
   if (!manga) return {}
   return {
     title: `${manga.title} | MANGA Gallery`,
@@ -20,13 +20,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export function generateStaticParams() {
-  return getMangaList().map((manga) => ({ id: manga.id }))
+export async function generateStaticParams() {
+  const mangaList = await getMangaList()
+  return mangaList.map((manga) => ({ id: manga.id }))
 }
 
 export default async function MangaDetailPage({ params }: Props) {
   const { id } = await params
-  const manga = getMangaById(id)
+  const manga = await getMangaById(id)
 
   if (!manga) notFound()
 
