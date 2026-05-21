@@ -5,6 +5,7 @@ import FloatingParticles from "@/components/backgrounds/FloatingParticles";
 import AuroraBackground from "@/components/backgrounds/AuroraBackground"
 import Natural from "@/components/backgrounds/Natural"
 import WarmBeige from "@/components/backgrounds/WarmBeige"
+import MinimalGrid from "@/components/template/MinimalGrid"
 // import BackgroundScene from "@/components/backgrounds/background-scene"
 
 export default async function HomePage() {
@@ -16,7 +17,8 @@ export default async function HomePage() {
       {/* 背景指定 */}
       {/* <AuroraBackground /> */}
       {/* <Natural /> */}
-      <WarmBeige />
+      <MinimalGrid />
+      {/* <WarmBeige /> */}
       <SiteHeader />
 
       <main>
