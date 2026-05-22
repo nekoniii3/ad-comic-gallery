@@ -48,9 +48,10 @@ export default async function HomePage() {
               Original Works
             </p> */}
             <h1 className="font-black text-4xl md:text-6xl text-black leading-tight mb-4 text-balance">
-              私のハンドメイド
+              {/* 私のハンドメイド */}
+              文京区社会人サークル
               <br />
-              <span className="text-primary">作品ギャラリー</span>
+              <span className="text-primary">ギャラリー</span>
             </h1>
             <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto leading-relaxed">
               オリジナル漫画作品をご覧ください。
