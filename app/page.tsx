@@ -24,7 +24,6 @@ export default async function HomePage() {
       <main>
         {/* Hero */}
         <section className="relative py-16 px-4 overflow-hidden">
-          {/* Background decoration */}
           {/* <div
             className="absolute inset-0 opacity-5"
             style={{
