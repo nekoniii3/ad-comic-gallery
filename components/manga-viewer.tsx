@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback, useEffect } from 'react'
+import { useState, useCallback, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Manga } from '@/lib/manga-data'
@@ -15,7 +15,7 @@ export function MangaViewer({ manga }: MangaViewerProps) {
   const [isZoomed, setIsZoomed] = useState(false)
   const [showUI, setShowUI] = useState(true)
   const [uiTimeout, setUiTimeout] = useState<ReturnType<typeof setTimeout> | null>(null)
-
+  const touchStartX = useRef<number | null>(null)
   const totalPages = manga.imageData.length
 
   const goToPrev = useCallback(() => {
@@ -54,13 +54,30 @@ export function MangaViewer({ manga }: MangaViewerProps) {
 
   const page = manga.imageData[currentPage]
 
-  // console.log(page)
+  const SWIPE_THRESHOLD = 50
+
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX
+    revealUI()
+  }, [revealUI])
+
+  const handleTouchEnd = useCallback((e: React.TouchEvent) => {
+    if (touchStartX.current === null) return
+    const diff = touchStartX.current - e.changedTouches[0].clientX
+    if (Math.abs(diff) >= SWIPE_THRESHOLD) {
+      if (diff > 0) goToNext()
+      else goToPrev()
+    }
+    touchStartX.current = null
+  }, [goToNext, goToPrev])
 
   return (
     <div
       className="relative w-full h-screen bg-[oklch(0.06_0_0)] overflow-hidden select-none"
       onMouseMove={revealUI}
-      onTouchStart={revealUI}
+      // onTouchStart={revealUI}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
       {/* Page image */}
       <div
