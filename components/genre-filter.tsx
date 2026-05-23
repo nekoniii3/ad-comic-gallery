@@ -7,7 +7,7 @@ import type { Manga } from '@/lib/manga-data'
 import WarmBeige, { partsColor } from "@/components/backgrounds/WarmBeige"
 import { cn } from "@/lib/utils"
 
-const PAGE_SIZE = 12
+const PAGE_SIZE = 15
 
 const bgColorSelected = partsColor.bgSelected
 

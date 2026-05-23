@@ -1,0 +1,98 @@
+[
+	{
+		"id": "camp",
+		"title": "みんなでキャンプをしました！",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2026年5月12日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/camp/26155547_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/camp/4182434_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/camp/4182472_s.jpg"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/camp/26155547_s.jpg"
+	},
+	{
+		"id": "golf",
+		"title": "みんなでゴルフをしました！",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2026年3月7日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/golf/26883299_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/golf/33768291_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/golf/33768292_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/golf/33768306_s.jpg"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/golf/26883299_s.jpg"
+	},
+	{
+		"id": "tennis",
+		"title": "みんなでテニスをしました！",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2026年1月25日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/tennis/33894137_s.jpg"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/tennis/33894137_s.jpg"
+	},
+	{
+		"id": "hiking",
+		"title": "みんなでハイキングをしました！",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2025年11月30日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/hiking/4153999_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/hiking/4182491_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/hiking/4182542_s.jpg"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/hiking/4153999_s.jpg"
+	}
+]

@@ -47,12 +47,15 @@ export default async function HomePage() {
             {/* <p className="text-primary text-xs tracking-[0.4em] uppercase font-bold mb-3">
               Original Works
             </p> */}
-            <h1 className="font-black text-4xl md:text-6xl text-black leading-tight mb-4 text-balance">
-              {/* 私のハンドメイド */}
+            <h1 className="text-4xl md:text-6xl leading-tight font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 pb-2">
+                文京区社会人サークル<br />{"「BSC」写真館"}
+            </h1>
+            {/* 私のハンドメイド */}
+            {/* <h1 className="font-black text-4xl md:text-6xl text-black/70 leading-tight mb-4 text-balance">
               文京区社会人サークル
               <br />
-              <span className="text-primary">ギャラリー</span>
-            </h1>
+              <span className="">写真館</span>
+            </h1> */}
             <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto leading-relaxed">
               オリジナル漫画作品をご覧ください。
               <br className="hidden md:block" />
