@@ -65,14 +65,22 @@
 		"imageData": [
 			{
 				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/tennis/33894013_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/tennis/33894021_s.jpg"
+			},
+			{
+				"alt": "",
 				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/tennis/33894137_s.jpg"
 			}
 		],
-		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/tennis/33894137_s.jpg"
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/tennis/33894013_s.jpg"
 	},
 	{
 		"id": "hiking",
-		"title": "みんなでハイキングをしました！",
+		"title": "みんなでハイキングに行きました！",
 		"titleEn": "",
 		"itemPage": "",
 		"author": "2025年11月30日",
@@ -94,5 +102,130 @@
 			}
 		],
 		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/hiking/4153999_s.jpg"
+	},
+	{
+		"id": "barbecue",
+		"title": "みんなでバーベキューをしました！",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2025年11月30日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/barbecue/28063388_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/barbecue/4153835_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/barbecue/4154043_s.jpg"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/barbecue/28063388_s.jpg"
+	},
+	{
+		"id": "yoga",
+		"title": "みんなでヨガをしました！",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2025年11月30日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/yoga/22831445_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/yoga/27310060_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/yoga/4001170_s.jpg"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/yoga/22831445_s.jpg"
+	},
+	{
+		"id": "karaoke",
+		"title": "みんなでカラオケに行きました！",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2025年11月30日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/karaoke/23532740_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/karaoke/27853647_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/karaoke/33768077_s.jpg"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/karaoke/23532740_s.jpg"
+	},
+	{
+		"id": "onsen",
+		"title": "みんなで温泉に行きました！",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2025年11月30日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/onsen/23520307_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/onsen/23520380_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/onsen/23520436_s.jpg"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/onsen/23520307_s.jpg"
+	},
+	{
+		"id": "study",
+		"title": "みんなで勉強をしました！",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2025年11月30日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/study/34558605_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/study/34558621_s.jpg"
+			},
+			{
+				"alt": "",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/study/34558630_s.jpg"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/circle/study/34558605_s.jpg"
 	}
 ]

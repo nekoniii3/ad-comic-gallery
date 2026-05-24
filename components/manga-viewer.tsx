@@ -162,7 +162,7 @@ export function MangaViewer({ manga }: MangaViewerProps) {
 
           <button
             onClick={(e) => { e.stopPropagation(); setIsZoomed((z) => !z) }}
-            className="text-foreground hover:text-primary transition-colors p-1 ml-auto"
+            className="text-foreground hover:text-primary transition-colors p-1 ml-auto max-md:hidden"
             aria-label={isZoomed ? 'ズームアウト' : 'ズームイン'}
           >
             {isZoomed ? <ZoomOut className="w-5 h-5" /> : <ZoomIn className="w-5 h-5" />}
@@ -178,13 +178,13 @@ export function MangaViewer({ manga }: MangaViewerProps) {
         <div className="flex flex-col gap-3 px-4 py-4 bg-gradient-to-t from-black/80 to-transparent">
 
           {/* Page info label */}
-          <div
+          {page.alt != "" && <div
             className={`flex justify-center pointer-events-none transition-all duration-300 ${showUI ? 'opacity-100' : 'opacity-0'}`}
           >
             <p className="text-xs text-white/70 bg-black/50 backdrop-blur-sm px-3 py-1 rounded-full max-w-xs sm:max-w-sm text-center leading-relaxed">
               {page.alt}
             </p>
-          </div>
+          </div>}
 
           {/* Page thumbnails */}
           <div className="flex justify-center gap-2 overflow-x-auto pb-1">
