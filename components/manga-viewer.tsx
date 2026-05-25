@@ -5,10 +5,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { Manga } from '@/lib/manga-data'
 import { ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut, BookOpen } from 'lucide-react'
+import { partsColor } from "@/components/template/FloatingParticles";
 
 type MangaViewerProps = {
   manga: Manga
 }
+
+const a = partsColor.bgSelected
 
 export function MangaViewer({ manga }: MangaViewerProps) {
   const [currentPage, setCurrentPage] = useState(0)

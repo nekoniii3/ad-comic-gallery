@@ -1,7 +1,7 @@
 import { GenreFilter } from '@/components/genre-filter'
 import { SiteHeader } from '@/components/site-header'
 import { getMangaList, getTagList } from '@/lib/manga-data'
-import FloatingParticles from "@/components/backgrounds/FloatingParticles";
+import { FloatingParticles } from "@/components/template/FloatingParticles";
 import AuroraBackground from "@/components/backgrounds/AuroraBackground"
 import Natural from "@/components/backgrounds/Natural"
 import WarmBeige from "@/components/backgrounds/WarmBeige"
@@ -17,49 +17,34 @@ export default async function HomePage() {
       {/* 背景指定 */}
       {/* <AuroraBackground /> */}
       {/* <Natural /> */}
-      <MinimalGrid />
+      {/* <MinimalGrid /> */}
       {/* <WarmBeige /> */}
+      <FloatingParticles />
       <SiteHeader />
 
       <main>
         {/* Hero */}
         <section className="relative py-16 px-4 overflow-hidden">
-          {/* <div
-            className="absolute inset-0 opacity-5"
-            style={{
-              backgroundImage: `repeating-linear-gradient(
-                0deg,
-                transparent,
-                transparent 40px,
-                oklch(0.65 0.22 25) 40px,
-                oklch(0.65 0.22 25) 41px
-              ), repeating-linear-gradient(
-                90deg,
-                transparent,
-                transparent 40px,
-                oklch(0.65 0.22 25) 40px,
-                oklch(0.65 0.22 25) 41px
-              )`,
-            }}
-          /> */}
-
           <div className="relative max-w-6xl mx-auto text-center">
-            {/* <p className="text-primary text-xs tracking-[0.4em] uppercase font-bold mb-3">
-              Original Works
-            </p> */}
-            <h1 className="text-4xl md:text-6xl leading-tight font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 pb-2">
+            {/* 社会人サークル */}
+            {/* <h1 className="text-4xl md:text-6xl leading-tight font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 pb-2">
                 文京区社会人サークル<br />{"「BSC」写真館"}
-            </h1>
-            {/* 私のハンドメイド */}
-            {/* <h1 className="font-black text-4xl md:text-6xl text-black/70 leading-tight mb-4 text-balance">
-              文京区社会人サークル
-              <br />
-              <span className="">写真館</span>
-            </h1> */}
+            </h1> 
             <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto leading-relaxed">
               オリジナル漫画作品をご覧ください。
               <br className="hidden md:block" />
               作品をクリックするとフルスクリーンで読めます。
+            </p>
+            */}
+            {/* 私のハンドメイド */}
+            {/* 猫 */}
+            <h1 className="text-4xl md:text-6xl leading-tight font-extrabold text-yellow-600 tracking-tight pb-6">
+                複数ページ時のサンプル<br />
+            </h1>
+            <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto leading-relaxed">
+              15項目を超えて複数ページに渡った際のサンプルです。
+              <br className="hidden md:block" />
+              最下部のボタンで前後のページに移動できます。
             </p>
           </div>
         </section>
