@@ -7,7 +7,6 @@ import Natural from "@/components/backgrounds/Natural"
 import WarmBeige from "@/components/backgrounds/WarmBeige"
 import MinimalGrid from "@/components/template/MinimalGrid"
 import ArchitectCross from "@/components/template/ArchitectCross"
-// import BackgroundScene from "@/components/backgrounds/background-scene"
 import Simple from "@/components/template/Simple"
 
 export default async function HomePage() {
@@ -53,7 +52,6 @@ export default async function HomePage() {
         </section>
 
         {/* Manga Grid with genre filter */}
-        {/* <GenreFilter tagList={tagList} mangaList={mangaList} /> */}
         <GenreFilter mangaList={mangaList} tagList={tagList}/>
       </main>
 

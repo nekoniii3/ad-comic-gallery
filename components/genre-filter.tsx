@@ -82,10 +82,6 @@ export function GenreFilter({ mangaList, tagList }: GenreFilterProps) {
               className={cn(`text-xs px-3 py-1.5 rounded-full border transition-colors duration-150 font-medium`
               , activeGenre === genre 
               ? bgColorSelected : "bg-white text-black hover:border-primary hover:text-foreground")}
-              //   activeGenre === genre
-              //     ? 'bg-primary text-primary-foreground border-primary'
-              //     : 'bg-white text-black border-border hover:text-foreground'
-              // }`}
               aria-pressed={activeGenre === genre}
             >
               {genre}
