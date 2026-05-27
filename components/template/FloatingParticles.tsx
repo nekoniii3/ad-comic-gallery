@@ -1,15 +1,18 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+
 export interface PartsColor {
     bgSelected: string
     borderCard: string
     shadowCard: string
+    bgCard: string
 }
 export const partsColor: PartsColor = {
   bgSelected: "bg-amber-800",
   borderCard: "border-yellow-700",
-  shadowCard: "hover:shadow-[0_0_30px_oklch(0.80_0.18_86_/_0.4)]"
+  shadowCard: "hover:shadow-[0_0_30px_oklch(0.80_0.18_86_/_0.4)]",
+  bgCard: "bg-amber-50",
 };
 
 export function FloatingParticles() {

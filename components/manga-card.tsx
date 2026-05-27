@@ -3,7 +3,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Manga } from '@/lib/manga-data'
-import { partsColor } from "@/components/template/FloatingParticles";
+// import { partsColor } from "@/components/template/FloatingParticles";
+import { partsColor } from "@/components/template/Simple";
 import { cn } from "@/lib/utils"
 
 type MangaCardProps = {
@@ -13,10 +14,11 @@ type MangaCardProps = {
 const bgSelected = partsColor.bgSelected
 const borderCard = partsColor.borderCard
 const shadowCard = partsColor.shadowCard
+const bgCard = partsColor.bgCard
 
 export function MangaCard({ manga }: MangaCardProps) {
   return (
-    <div className={cn("group relative overflow-hidden rounded-lg bg-orange-100 border border-border transition-all duration-300 hover:-translate-y-1", borderCard, shadowCard)}>
+    <div className={cn("group relative overflow-hidden rounded-lg border border-border transition-all duration-300 hover:-translate-y-1", borderCard, shadowCard,  bgCard )}>
       {/* Cover image — clicking anywhere on the image goes straight to the reader */}
       <Link
         href={`/manga/${manga.id}/read`}
