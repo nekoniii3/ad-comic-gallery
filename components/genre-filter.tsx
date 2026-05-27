@@ -108,7 +108,7 @@ export function GenreFilter({ mangaList, tagList }: GenreFilterProps) {
         <div className="flex items-center justify-end my-5">
           <span className="text-muted-foreground text-sm">
             {/* {filtered.length} / {mangaList.length} 作品 */}
-            全 {filtered.length} 作品
+             {filtered.length} 作品
           </span>
         </div>
         {/* Pagination */}

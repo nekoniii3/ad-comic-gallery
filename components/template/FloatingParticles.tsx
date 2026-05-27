@@ -9,7 +9,7 @@ export interface PartsColor {
 export const partsColor: PartsColor = {
   bgSelected: "bg-amber-800",
   borderCard: "border-yellow-700",
-  shadowCard: "hover:-translate-y-1 hover:shadow-[0_0_30px_oklch(0.80_0.18_86_/_0.4)]"
+  shadowCard: "hover:shadow-[0_0_30px_oklch(0.80_0.18_86_/_0.4)]"
 };
 
 export function FloatingParticles() {

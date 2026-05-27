@@ -6,7 +6,9 @@ import AuroraBackground from "@/components/backgrounds/AuroraBackground"
 import Natural from "@/components/backgrounds/Natural"
 import WarmBeige from "@/components/backgrounds/WarmBeige"
 import MinimalGrid from "@/components/template/MinimalGrid"
+import ArchitectCross from "@/components/template/ArchitectCross"
 // import BackgroundScene from "@/components/backgrounds/background-scene"
+import Simple from "@/components/template/Simple"
 
 export default async function HomePage() {
   const mangaList = await getMangaList()
@@ -19,7 +21,8 @@ export default async function HomePage() {
       {/* <Natural /> */}
       {/* <MinimalGrid /> */}
       {/* <WarmBeige /> */}
-      <FloatingParticles />
+      {/* <FloatingParticles /> */}
+      <Simple />
       <SiteHeader />
 
       <main>
@@ -57,23 +60,14 @@ export default async function HomePage() {
       {/* Footer */}
       <footer
         id="about"
-        className="border-t border-border py-10 px-4"
+        className="border-t border-border py-8 px-4 mb-8"
       >
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-6 h-6 bg-primary rounded flex items-center justify-center">
-                <span className="text-primary-foreground font-black text-xs">漫</span>
-              </div>
-              <span className="text-foreground font-bold text-sm">MANGA Gallery</span>
+        <div className="max-w-6xl mx-auto flex items-center justify-center gap-6">
+          {/* <div> */}
+            <div className="text-muted-foreground text-sm max-w-xs text-center leading-relaxed">
+              画像は全てPexelsから利用したものです。<br/>
+              &copy; {new Date().getFullYear()} All rights reserved.
             </div>
-            <p className="text-muted-foreground text-sm max-w-xs leading-relaxed">
-              自作漫画の個人ギャラリーサイトです。すべての作品の著作権は作者に帰属します。
-            </p>
-          </div>
-          <p className="text-muted-foreground text-xs">
-            &copy; {new Date().getFullYear()} MANGA Gallery. All rights reserved.
-          </p>
         </div>
       </footer>
       </div>

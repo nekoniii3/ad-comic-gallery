@@ -16,7 +16,7 @@ const shadowCard = partsColor.shadowCard
 
 export function MangaCard({ manga }: MangaCardProps) {
   return (
-    <div className={cn("group relative overflow-hidden rounded-lg bg-orange-100 border border-border transition-all duration-300 hover:-translate-y-1 ", borderCard, shadowCard)}>
+    <div className={cn("group relative overflow-hidden rounded-lg bg-orange-100 border border-border transition-all duration-300 hover:-translate-y-1", borderCard, shadowCard)}>
       {/* Cover image — clicking anywhere on the image goes straight to the reader */}
       <Link
         href={`/manga/${manga.id}/read`}
