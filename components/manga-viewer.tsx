@@ -19,17 +19,31 @@ export function MangaViewer({ manga }: MangaViewerProps) {
   const [showUI, setShowUI] = useState(true)
   const [uiTimeout, setUiTimeout] = useState<ReturnType<typeof setTimeout> | null>(null)
   const touchStartX = useRef<number | null>(null)
+  // 'left' = next page (slide left), 'right' = prev page (slide right), null = direct jump
+  const [slideDir, setSlideDir] = useState<'left' | 'right' | null>(null)
+  const [animKey, setAnimKey] = useState(0)
   const totalPages = manga.imageData.length
 
   const goToPrev = useCallback(() => {
+    setSlideDir('right')
+    setAnimKey((k) => k + 1)
     setCurrentPage((p) => Math.max(0, p - 1))
     setIsZoomed(false)
   }, [])
 
   const goToNext = useCallback(() => {
+    setSlideDir('left')
+    setAnimKey((k) => k + 1)
     setCurrentPage((p) => Math.min(totalPages - 1, p + 1))
     setIsZoomed(false)
   }, [totalPages])
+
+  const jumpToPage = useCallback((index: number) => {
+    setSlideDir(null)
+    setAnimKey((k) => k + 1)
+    setCurrentPage(index)
+    setIsZoomed(false)
+  }, [])
 
   const revealUI = useCallback(() => {
     setShowUI(true)
@@ -85,14 +99,26 @@ export function MangaViewer({ manga }: MangaViewerProps) {
       {/* Page image */}
       <div
         // className={`absolute inset-0 flex items-center justify-center transition-transform duration-300 ${isZoomed ? 'cursor-zoom-out' : 'cursor-zoom-in'}`}
-        className={`absolute inset-0 flex items-center justify-center transition-transform duration-300 `}
+        className={`absolute inset-0 flex items-center justify-center `}
         // onClick={() => setIsZoomed((z) => !z)}   // 画像クリック時のイベント
       >
-        <div
+        {/* <div
           className={`relative transition-all duration-300 ease-in-out ${
             isZoomed
               ? 'w-full h-full max-w-none overflow-auto'
               : 'max-w-2xl w-full h-full'
+          }`}
+        > */}
+        <div
+          key={animKey}
+          className={`relative ${
+            isZoomed ? 'w-full h-full max-w-none overflow-auto' : 'max-w-2xl w-full h-full'
+          } ${
+            slideDir === 'left'
+              ? 'animate-slide-in-left'
+              : slideDir === 'right'
+              ? 'animate-slide-in-right'
+              : 'animate-fade-in'
           }`}
         >
           <Image
@@ -195,7 +221,8 @@ export function MangaViewer({ manga }: MangaViewerProps) {
               <button
                 // key={p.id}
                 key={i}
-                onClick={(e) => { e.stopPropagation(); setCurrentPage(i); setIsZoomed(false) }}
+                onClick={(e) => { e.stopPropagation(); jumpToPage(i) }}
+                  // setCurrentPage(i); setIsZoomed(false) }}
                 className={`relative flex-shrink-0 w-10 h-14 rounded overflow-hidden border-2 transition-all ${
                   i === currentPage ? 'border-primary scale-110' : 'border-border opacity-60 hover:opacity-100'
                 }`}
