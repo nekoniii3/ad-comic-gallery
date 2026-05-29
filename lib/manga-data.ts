@@ -10,15 +10,11 @@ export type MangaPage = {
 export type Manga = {
   id: string
   title: string
-  titleEn: string
-  author: string
-  tag: string[]
-  description: string
-  coverImage: string
+  additional: string
+  coverImage:string
   itemPage: string
-  imageCount: number
+  tag: string[]
   imageData: MangaPage[]
-  updatedAt: string
 }
 
 export type Tag = {
@@ -58,9 +54,10 @@ export function getTagList(): string[] {
   const filePath = path.join(process.cwd(), 'public', 'data', 'tag.json')
   const raw = fs.readFileSync(filePath, 'utf-8')
   // console.log(JSON.parse(raw))
-  const tagList = JSON.parse(raw).map(function(item: any){
-      return item["name"];
-  })
-  // console.log(tagList)
+  // const tagList = JSON.parse(raw).map(function(item: any){
+  //     return item["name"];
+  // })
+  const tagList = JSON.parse(raw).tags
+  console.log(tagList)
   return tagList
 }

@@ -39,15 +39,28 @@ export default async function HomePage() {
             </p>
             */}
             {/* 私のハンドメイド */}
+            <div className="text-4xl md:text-6xl leading-tight text-stone-700 border-zinc-800 tracking-tight pb-6">
+              <h1 className="text-5xl md:text-6xl font-serif font-semibold text-slate-600 drop-shadow-sm leading-snug">
+                私のハンドメイド
+              </h1>
+              <h1 className="text-5xl md:text-6xl font-serif font-semibold text-slate-600 drop-shadow-sm leading-snug">
+                作品ギャラリー
+              </h1>
+            </div>
+            <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto leading-relaxed">
+              15項目を超えて複数ページに渡った際のサンプルです。
+              <br className="hidden md:block" />
+              最下部のボタンで前後のページに移動できます。
+            </p>
             {/* 猫 */}
-            <h1 className="text-4xl md:text-6xl leading-tight font-extrabold text-yellow-600 tracking-tight pb-6">
+            {/* <h1 className="text-4xl md:text-6xl leading-tight font-extrabold text-yellow-600 tracking-tight pb-6">
                 複数ページ時のサンプル<br />
             </h1>
             <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto leading-relaxed">
               15項目を超えて複数ページに渡った際のサンプルです。
               <br className="hidden md:block" />
               最下部のボタンで前後のページに移動できます。
-            </p>
+            </p> */}
           </div>
         </section>
 

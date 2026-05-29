@@ -2,48 +2,66 @@
 
 import { useState, useCallback, useEffect, useRef } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 import type { Manga } from '@/lib/manga-data'
 import { ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut, BookOpen } from 'lucide-react'
-import { partsColor } from "@/components/template/FloatingParticles";
 
 type MangaViewerProps = {
   manga: Manga
 }
 
-const a = partsColor.bgSelected
-
 export function MangaViewer({ manga }: MangaViewerProps) {
   const [currentPage, setCurrentPage] = useState(0)
+  const [displayPage, setDisplayPage] = useState(0)
   const [isZoomed, setIsZoomed] = useState(false)
   const [showUI, setShowUI] = useState(true)
   const [uiTimeout, setUiTimeout] = useState<ReturnType<typeof setTimeout> | null>(null)
   const touchStartX = useRef<number | null>(null)
-  // 'left' = next page (slide left), 'right' = prev page (slide right), null = direct jump
-  const [slideDir, setSlideDir] = useState<'left' | 'right' | null>(null)
-  const [animKey, setAnimKey] = useState(0)
+  const [isTransitioning, setIsTransitioning] = useState(false)
+
   const totalPages = manga.imageData.length
 
+  // Preload adjacent images
+  useEffect(() => {
+    const preload = (index: number) => {
+      if (index >= 0 && index < totalPages) {
+        const img = new window.Image()
+        img.src = manga.imageData[index].imgPath
+      }
+    }
+    preload(currentPage - 1)
+    preload(currentPage + 1)
+    preload(currentPage + 2)
+  }, [currentPage, manga.imageData, totalPages])
+
+  // Delayed display update for smooth crossfade
+  useEffect(() => {
+    if (currentPage !== displayPage) {
+      setIsTransitioning(true)
+      const timer = setTimeout(() => {
+        setDisplayPage(currentPage)
+        setIsTransitioning(false)
+      }, 150)
+      return () => clearTimeout(timer)
+    }
+  }, [currentPage, displayPage])
+
   const goToPrev = useCallback(() => {
-    setSlideDir('right')
-    setAnimKey((k) => k + 1)
+    if (isTransitioning) return
     setCurrentPage((p) => Math.max(0, p - 1))
     setIsZoomed(false)
-  }, [])
+  }, [isTransitioning])
 
   const goToNext = useCallback(() => {
-    setSlideDir('left')
-    setAnimKey((k) => k + 1)
+    if (isTransitioning) return
     setCurrentPage((p) => Math.min(totalPages - 1, p + 1))
     setIsZoomed(false)
-  }, [totalPages])
+  }, [totalPages, isTransitioning])
 
   const jumpToPage = useCallback((index: number) => {
-    setSlideDir(null)
-    setAnimKey((k) => k + 1)
+    if (isTransitioning) return
     setCurrentPage(index)
     setIsZoomed(false)
-  }, [])
+  }, [isTransitioning])
 
   const revealUI = useCallback(() => {
     setShowUI(true)
@@ -69,8 +87,6 @@ export function MangaViewer({ manga }: MangaViewerProps) {
     return () => window.removeEventListener('keydown', handler)
   }, [goToPrev, goToNext])
 
-  const page = manga.imageData[currentPage]
-
   const SWIPE_THRESHOLD = 50
 
   const handleTouchStart = useCallback((e: React.TouchEvent) => {
@@ -88,41 +104,26 @@ export function MangaViewer({ manga }: MangaViewerProps) {
     touchStartX.current = null
   }, [goToNext, goToPrev])
 
+  const page = manga.imageData[displayPage]
+
   return (
     <div
       className="relative w-full h-screen bg-[oklch(0.06_0_0)] overflow-hidden select-none"
       onMouseMove={revealUI}
-      // onTouchStart={revealUI}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Page image */}
+      {/* Page image with crossfade */}
       <div
-        // className={`absolute inset-0 flex items-center justify-center transition-transform duration-300 ${isZoomed ? 'cursor-zoom-out' : 'cursor-zoom-in'}`}
-        className={`absolute inset-0 flex items-center justify-center `}
-        // onClick={() => setIsZoomed((z) => !z)}   // 画像クリック時のイベント
+        className={`absolute inset-0 flex items-center justify-center ${isZoomed ? 'cursor-zoom-out' : 'cursor-zoom-in'}`}
+        onClick={() => setIsZoomed((z) => !z)}
       >
-        {/* <div
-          className={`relative transition-all duration-300 ease-in-out ${
-            isZoomed
-              ? 'w-full h-full max-w-none overflow-auto'
-              : 'max-w-2xl w-full h-full'
-          }`}
-        > */}
         <div
-          key={animKey}
-          className={`relative ${
+          className={`relative transition-opacity duration-500 ease-out ${
             isZoomed ? 'w-full h-full max-w-none overflow-auto' : 'max-w-2xl w-full h-full'
-          } ${
-            slideDir === 'left'
-              ? 'animate-slide-in-left'
-              : slideDir === 'right'
-              ? 'animate-slide-in-right'
-              : 'animate-fade-in'
-          }`}
+          } ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}
         >
           <Image
-            key={page.imgPath}
             src={page.imgPath}
             alt={page.alt}
             fill={!isZoomed}
@@ -133,6 +134,15 @@ export function MangaViewer({ manga }: MangaViewerProps) {
             draggable={false}
           />
         </div>
+      </div>
+
+      {/* Page info label */}
+      <div
+        className={`absolute top-14 left-0 right-0 z-20 flex justify-center pointer-events-none transition-all duration-300 ${showUI ? 'opacity-100' : 'opacity-0'}`}
+      >
+        <p className="text-xs text-white/70 bg-black/50 backdrop-blur-sm px-3 py-1 rounded-full max-w-xs sm:max-w-sm text-center leading-relaxed">
+          {page.alt}
+        </p>
       </div>
 
       {/* Left arrow tap zone */}
@@ -167,31 +177,24 @@ export function MangaViewer({ manga }: MangaViewerProps) {
       <div
         className={`absolute top-0 left-0 right-0 z-20 transition-all duration-300 ${showUI ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'}`}
       >
-        <div className="flex items-center px-4 py-3 bg-gradient-to-b from-black/80 to-transparent">
+        <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-b from-black/80 to-transparent">
           <a
             href="/"
             className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
             aria-label="一覧に戻る"
           >
             <X className="w-5 h-5" />
-            <span className="text-sm font-medium hidden sm:inline flex-1">閉じる</span>
+            <span className="text-sm font-medium hidden sm:inline">閉じる</span>
           </a>
 
-          <div className="absolute left-1/2 -translate-x-1/2 gap-2">
-            {/* <BookOpen className="w-4 h-4 text-muted-foreground" /> */}
-            {/* タイトルのリンク */}
-            <Link
-              href={`${manga.itemPage}`}
-              aria-label="商品ページ"
-              target="_blank"
-            >
-              <h1 className="text-sm font-bold text-foreground">{manga.title}</h1>
-            </Link>
+          <div className="flex items-center gap-2">
+            <BookOpen className="w-4 h-4 text-muted-foreground" />
+            <h1 className="text-sm font-bold text-foreground">{manga.title}</h1>
           </div>
 
           <button
             onClick={(e) => { e.stopPropagation(); setIsZoomed((z) => !z) }}
-            className="text-foreground hover:text-primary transition-colors p-1 ml-auto max-md:hidden"
+            className="text-foreground hover:text-primary transition-colors p-1"
             aria-label={isZoomed ? 'ズームアウト' : 'ズームイン'}
           >
             {isZoomed ? <ZoomOut className="w-5 h-5" /> : <ZoomIn className="w-5 h-5" />}
@@ -199,30 +202,17 @@ export function MangaViewer({ manga }: MangaViewerProps) {
         </div>
       </div>
 
-
       {/* Bottom bar */}
       <div
         className={`absolute bottom-0 left-0 right-0 z-20 transition-all duration-300 ${showUI ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'}`}
       >
         <div className="flex flex-col gap-3 px-4 py-4 bg-gradient-to-t from-black/80 to-transparent">
-
-          {/* Page info label */}
-          {page.alt != "" && <div
-            className={`flex justify-center pointer-events-none transition-all duration-300 ${showUI ? 'opacity-100' : 'opacity-0'}`}
-          >
-            <p className="text-xs text-white/70 bg-black/50 backdrop-blur-sm px-3 py-1 rounded-full max-w-xs sm:max-w-sm text-center leading-relaxed">
-              {page.alt}
-            </p>
-          </div>}
-
           {/* Page thumbnails */}
           <div className="flex justify-center gap-2 overflow-x-auto pb-1">
             {manga.imageData.map((p, i) => (
               <button
-                // key={p.id}
                 key={i}
                 onClick={(e) => { e.stopPropagation(); jumpToPage(i) }}
-                  // setCurrentPage(i); setIsZoomed(false) }}
                 className={`relative flex-shrink-0 w-10 h-14 rounded overflow-hidden border-2 transition-all ${
                   i === currentPage ? 'border-primary scale-110' : 'border-border opacity-60 hover:opacity-100'
                 }`}

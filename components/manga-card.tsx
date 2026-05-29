@@ -50,7 +50,7 @@ export function MangaCard({ manga }: MangaCardProps) {
         <h2 className="text-yellow-800 font-bold text-sm leading-tight mb-1 text-balance">
           {manga.title}
         </h2>
-        <p className="text-muted-foreground text-xs mb-2">{manga.author}</p>
+        <p className="text-muted-foreground text-xs mb-2">{manga.additional}</p>
         <div className="flex flex-wrap gap-1">
           {manga.tag.slice(0, 2).map((g) => (
             <span

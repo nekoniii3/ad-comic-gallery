@@ -1,0 +1,350 @@
+[
+	{
+		"id": "bag",
+		"title": "バッグ（全４カラー）",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2026年5月12日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "bl.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/bl.png"
+			},
+			{
+				"alt": "br.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/br.png"
+			},
+			{
+				"alt": "gr.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/gr.png"
+			},
+			{
+				"alt": "pu.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/pu.png"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bag/bl.png"
+	},
+	{
+		"id": "bookcover",
+		"title": "バッグ（全４カラー）",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2026年3月7日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "1.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bookcover/1.png"
+			},
+			{
+				"alt": "2.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bookcover/2.png"
+			},
+			{
+				"alt": "3.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bookcover/3.png"
+			},
+			{
+				"alt": "4.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bookcover/4.png"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/bookcover/1.png"
+	},
+	{
+		"id": "cushioncover",
+		"title": "バッグ（全４カラー）",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2026年1月25日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "1.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/cushioncover/1.png"
+			},
+			{
+				"alt": "2.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/cushioncover/2.png"
+			},
+			{
+				"alt": "3.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/cushioncover/3.png"
+			},
+			{
+				"alt": "4.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/cushioncover/4.png"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/cushioncover/1.png"
+	},
+	{
+		"id": "diary",
+		"title": "バッグ（全４カラー）",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2025年11月30日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "1.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/diary/1.png"
+			},
+			{
+				"alt": "2.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/diary/2.png"
+			},
+			{
+				"alt": "3.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/diary/3.png"
+			},
+			{
+				"alt": "4.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/diary/4.png"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/diary/1.png"
+	},
+	{
+		"id": "gamaguchi",
+		"title": "バッグ（全４カラー）",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2025年11月30日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "1.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/gamaguchi/1.png"
+			},
+			{
+				"alt": "2.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/gamaguchi/2.png"
+			},
+			{
+				"alt": "3.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/gamaguchi/3.png"
+			},
+			{
+				"alt": "4.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/gamaguchi/4.png"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/gamaguchi/1.png"
+	},
+	{
+		"id": "pencase",
+		"title": "バッグ（全４カラー）",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2025年11月30日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "1.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pencase/1.png"
+			},
+			{
+				"alt": "2.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pencase/2.png"
+			},
+			{
+				"alt": "3.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pencase/3.png"
+			},
+			{
+				"alt": "4.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pencase/4.png"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pencase/1.png"
+	},
+	{
+		"id": "pouch",
+		"title": "バッグ（全４カラー）",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2025年11月30日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "1.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png"
+			},
+			{
+				"alt": "2.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/2.png"
+			},
+			{
+				"alt": "3.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/3.png"
+			},
+			{
+				"alt": "4.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/4.png"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/pouch/1.png"
+	},
+	{
+		"id": "purse",
+		"title": "バッグ（全４カラー）",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2025年11月30日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "1.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/purse/1.png"
+			},
+			{
+				"alt": "2.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/purse/2.png"
+			},
+			{
+				"alt": "3.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/purse/3.png"
+			},
+			{
+				"alt": "4.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/purse/4.png"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/purse/1.png"
+	},
+	{
+		"id": "toy",
+		"title": "バッグ（全４カラー）",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2025年11月30日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "1.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/toy/1.png"
+			},
+			{
+				"alt": "2.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/toy/2.png"
+			},
+			{
+				"alt": "3.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/toy/3.png"
+			},
+			{
+				"alt": "4.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/toy/4.png"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/toy/1.png"
+	},
+	{
+		"id": "glassescase",
+		"title": "バッグ（全４カラー）",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2025年11月30日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "1.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/glassescase/1.png"
+			},
+			{
+				"alt": "2.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/glassescase/2.png"
+			},
+			{
+				"alt": "3.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/glassescase/3.png"
+			},
+			{
+				"alt": "4.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/glassescase/4.png"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/glassescase/1.png"
+	},
+	{
+		"id": "shushu",
+		"title": "バッグ（全４カラー）",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2025年11月30日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "1.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/shushu/1.png"
+			},
+			{
+				"alt": "2.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/shushu/2.png"
+			},
+			{
+				"alt": "3.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/shushu/3.png"
+			},
+			{
+				"alt": "4.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/shushu/4.png"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/shushu/1.png"
+	},
+	{
+		"id": "tissuecover",
+		"title": "バッグ（全４カラー）",
+		"titleEn": "",
+		"itemPage": "",
+		"author": "2025年11月30日",
+		"description": "",
+		"tag": [],
+		"updatedAt": "",
+		"imageData": [
+			{
+				"alt": "1.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/tissuecover/1.png"
+			},
+			{
+				"alt": "2.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/tissuecover/2.png"
+			},
+			{
+				"alt": "3.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/tissuecover/3.png"
+			},
+			{
+				"alt": "4.png",
+				"imgPath": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/tissuecover/4.png"
+			}
+		],
+		"coverImage": "https://raw.githubusercontent.com/nekoniii3/MyViewer/refs/heads/main/sample/handmade/tissuecover/1.png"
+	}
+]
