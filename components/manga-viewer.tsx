@@ -4,6 +4,8 @@ import { useState, useCallback, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import type { Manga } from '@/lib/manga-data'
 import { ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut, BookOpen } from 'lucide-react'
+import { partsColor } from "@/components/template/FloatingParticles";
+import Link from 'next/link'
 
 type MangaViewerProps = {
   manga: Manga
@@ -115,8 +117,9 @@ export function MangaViewer({ manga }: MangaViewerProps) {
     >
       {/* Page image with crossfade */}
       <div
-        className={`absolute inset-0 flex items-center justify-center ${isZoomed ? 'cursor-zoom-out' : 'cursor-zoom-in'}`}
-        onClick={() => setIsZoomed((z) => !z)}
+        // className={`absolute inset-0 flex items-center justify-center ${isZoomed ? 'cursor-zoom-out' : 'cursor-zoom-in'}`}
+        className={`absolute inset-0 flex items-center justify-center `}
+        // onClick={() => setIsZoomed((z) => !z)}
       >
         <div
           className={`relative transition-opacity duration-500 ease-out ${
@@ -177,24 +180,33 @@ export function MangaViewer({ manga }: MangaViewerProps) {
       <div
         className={`absolute top-0 left-0 right-0 z-20 transition-all duration-300 ${showUI ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'}`}
       >
-        <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-b from-black/80 to-transparent">
+        <div className="flex items-center px-4 py-3 bg-gradient-to-b from-black/80 to-transparent">
+        {/* <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-b from-black/80 to-transparent"> */}
           <a
             href="/"
             className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
             aria-label="一覧に戻る"
           >
             <X className="w-5 h-5" />
-            <span className="text-sm font-medium hidden sm:inline">閉じる</span>
+            <span className="text-sm font-medium hidden sm:inline flex-1">閉じる</span>
           </a>
 
-          <div className="flex items-center gap-2">
-            <BookOpen className="w-4 h-4 text-muted-foreground" />
-            <h1 className="text-sm font-bold text-foreground">{manga.title}</h1>
+          <div className="absolute left-1/2 -translate-x-1/2 gap-2">
+            {/* <BookOpen className="w-4 h-4 text-muted-foreground" /> */}
+            {/* タイトルのリンク */}
+            {manga.itemPage === "" ? <h1 className="text-sm font-bold text-foreground">{manga.title}</h1>
+            : <Link
+              href={`${manga.itemPage}`}
+              aria-label="商品ページ"
+              target="_blank"
+            >
+              <h1 className="text-sm font-bold text-foreground">{manga.title}</h1>
+            </Link>}
           </div>
 
           <button
             onClick={(e) => { e.stopPropagation(); setIsZoomed((z) => !z) }}
-            className="text-foreground hover:text-primary transition-colors p-1"
+            className="text-foreground hover:text-primary transition-colors p-1 ml-auto max-md:hidden"
             aria-label={isZoomed ? 'ズームアウト' : 'ズームイン'}
           >
             {isZoomed ? <ZoomOut className="w-5 h-5" /> : <ZoomIn className="w-5 h-5" />}
@@ -207,6 +219,15 @@ export function MangaViewer({ manga }: MangaViewerProps) {
         className={`absolute bottom-0 left-0 right-0 z-20 transition-all duration-300 ${showUI ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'}`}
       >
         <div className="flex flex-col gap-3 px-4 py-4 bg-gradient-to-t from-black/80 to-transparent">
+          {/* Page info label */}
+          {page.alt != "" && <div
+            className={`flex justify-center pointer-events-none transition-all duration-300 ${showUI ? 'opacity-100' : 'opacity-0'}`}
+          >
+            <p className="text-xs text-white/70 bg-black/50 backdrop-blur-sm px-3 py-1 rounded-full max-w-xs sm:max-w-sm text-center leading-relaxed">
+              {page.alt}
+            </p>
+          </div>}
+
           {/* Page thumbnails */}
           <div className="flex justify-center gap-2 overflow-x-auto pb-1">
             {manga.imageData.map((p, i) => (
