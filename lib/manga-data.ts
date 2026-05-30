@@ -18,7 +18,7 @@ export type Manga = {
 }
 
 export type Tag = {
-  name: string
+  tags: string[]
 }
 
 /**
@@ -26,23 +26,24 @@ export type Tag = {
  * JSON ファイルを直接編集することで作品を追加・更新できます。
  */
 export async function getMangaList(): Promise<Manga[]> {
-  const filePath = path.join(process.cwd(), 'public', 'data', 'manga.json')
-  // const jsonPath = "https://gist.githubusercontent.com/nekoniii3/b545557be3f84ee11ad751d598af29c0/raw"
+  // const filePath = path.join(process.cwd(), 'public', 'data', 'manga.json')
+  // const raw = fs.readFileSync(filePath, 'utf-8')
+  // return JSON.parse(raw) as Manga[]
 
-  // var raw;
+  const jsonPath = "https://gist.githubusercontent.com/settaro-001/e0d12279f3e0f7193d7019c41f624b51/raw"
 
-  // await fetch(jsonPath)
-  //   .then(response => response.json())
-  //   .then(data => {
-  //     raw = data
-  //   })
-  //   .catch(error => {
-  //     console.error('エラー:', error);
-  //   });
-  const raw = fs.readFileSync(filePath, 'utf-8')
-  return JSON.parse(raw) as Manga[]
-  
-    return raw as unknown as Manga[]
+  var raw;
+
+  await fetch(jsonPath)
+    .then(response => response.json())
+    .then(data => {
+      raw = data
+    })
+    .catch(error => {
+      console.error('エラー:', error);
+    });
+
+  return raw as unknown as Manga[]
 }
 
 export async function getMangaById(id: string): Promise<Manga | undefined> {
@@ -50,14 +51,29 @@ export async function getMangaById(id: string): Promise<Manga | undefined> {
   return mangaList.find((m) => m.id === id)
 }
 
-export function getTagList(): string[] {
-  const filePath = path.join(process.cwd(), 'public', 'data', 'tag.json')
-  const raw = fs.readFileSync(filePath, 'utf-8')
+export async function getTagList(): Promise<string[]> {
+  // const filePath = path.join(process.cwd(), 'public', 'data', 'tag.json')
+  const jsonPath = "https://gist.githubusercontent.com/settaro-001/1980b7e6511474ba36eea63616248cd1/raw"
+  // const raw = fs.readFileSync(filePath, 'utf-8')
   // console.log(JSON.parse(raw))
   // const tagList = JSON.parse(raw).map(function(item: any){
   //     return item["name"];
   // })
-  const tagList = JSON.parse(raw).tags
-  console.log(tagList)
-  return tagList
+  // const tagList = JSON.parse(raw).tags
+  // return tagList
+
+  var raw;
+
+  await fetch(jsonPath)
+    .then(response => response.json())
+    .then(data => {
+      raw = data
+    })
+    .catch(error => {
+      console.error('エラー:', error);
+    });
+
+  const rowAsTag = raw as unknown as Tag
+
+  return rowAsTag.tags
 }

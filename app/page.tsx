@@ -11,8 +11,8 @@ import Simple from "@/components/template/Simple"
 
 export default async function HomePage() {
   const mangaList = await getMangaList()
-  const tagList = getTagList()
- 
+  const tagList = await getTagList()
+
   return (
     <div>
       {/* 背景指定 */}

@@ -58,7 +58,7 @@ export function MangaCard({ manga }: MangaCardProps) {
           {manga.tag.slice(0, 2).map((g) => (
             <span
               key={g}
-              className={cn("text-[10px] px-2 py-0.5 rounded-full text-white border border-border", bgTag)}
+              className={cn("text-[10px] px-2 py-0.5 rounded-full text-white", bgTag)}
             >
               {g}
             </span>
