@@ -182,19 +182,10 @@ export function MangaViewer({ manga }: MangaViewerProps) {
       >
         <div className="flex items-center px-4 py-3 bg-gradient-to-b from-black/80 to-transparent">
         {/* <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-b from-black/80 to-transparent"> */}
-          <a
-            href="/"
-            className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
-            aria-label="一覧に戻る"
-          >
-            <X className="w-5 h-5" />
-            <span className="text-sm font-medium hidden sm:inline flex-1">閉じる</span>
-          </a>
-
           <div className="absolute left-1/2 -translate-x-1/2 gap-2">
             {/* <BookOpen className="w-4 h-4 text-muted-foreground" /> */}
             {/* タイトルのリンク */}
-            {manga.itemPage === "" ? <h1 className="text-sm font-bold text-foreground">{manga.title}</h1>
+            {manga.itemPage === "" ? <h1 className="text-base font-bold text-foreground">{manga.title}</h1>
             : <Link
               href={`${manga.itemPage}`}
               aria-label="商品ページ"
@@ -203,14 +194,21 @@ export function MangaViewer({ manga }: MangaViewerProps) {
               <h1 className="text-sm font-bold text-foreground">{manga.title}</h1>
             </Link>}
           </div>
-
-          <button
+          <a
+            href="/"
+            className="ml-auto gap-2 text-foreground hover:text-primary transition-colors"
+            aria-label="一覧に戻る"
+          >
+            <X className="w-7 h-7" />
+            {/* <span className="text-sm font-medium hidden sm:inline flex-1">閉じる</span> */}
+          </a>
+          {/* <button
             onClick={(e) => { e.stopPropagation(); setIsZoomed((z) => !z) }}
             className="text-foreground hover:text-primary transition-colors p-1 ml-auto max-md:hidden"
             aria-label={isZoomed ? 'ズームアウト' : 'ズームイン'}
           >
             {isZoomed ? <ZoomOut className="w-5 h-5" /> : <ZoomIn className="w-5 h-5" />}
-          </button>
+          </button> */}
         </div>
       </div>
 

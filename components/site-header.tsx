@@ -10,15 +10,16 @@ export function SiteHeader() {
             <span className="text-primary-foreground font-black text-sm leading-none">漫</span>
           </div> */}
           <div className="flex flex-col leading-none">
-            <span className="font-black text-yellow-500 text-base text-center tracking-wider">CAT</span>
-            <span className="text-muted-foreground text-yellow-500 text-[9px] tracking-[0.3em] uppercase">Gallery</span>
+            <span className="font-black text-blue-500 text-base text-center tracking-wide">BSC</span>
+            {/* <span className="text-muted-foreground text-yellow-500 text-[9px] text-center tracking-[0.3em] uppercase">Gallery</span> */}
+            <span className="text-blue-500 font-black text-[9px] text-center tracking-[0.3em] uppercase">Gallery</span>
           </div>
         </div>
 
-        <nav className="flex items-center gap-6">
+        <nav className="flex items-center gap-6 text-blue-500">
           <Link
             href="/"
-            className="text-muted-foreground hover:text-foreground text-sm transition-colors"
+            className="font-bold hover:text-foreground text-sm transition-colors"
           >
             公式ページはこちら
           </Link>

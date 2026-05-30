@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { Manga } from '@/lib/manga-data'
 // import { partsColor } from "@/components/template/FloatingParticles";
-import { partsColor } from "@/components/template/Simple";
+import { Template, partsColor } from "@/components/template/Template"
 import { cn } from "@/lib/utils"
 
 type MangaCardProps = {
@@ -15,6 +15,9 @@ const bgSelected = partsColor.bgSelected
 const borderCard = partsColor.borderCard
 const shadowCard = partsColor.shadowCard
 const bgCard = partsColor.bgCard
+const bgTag = partsColor.bgTag
+const bgButton = partsColor.bgButton
+const titleColor = partsColor.title
 
 export function MangaCard({ manga }: MangaCardProps) {
   return (
@@ -39,7 +42,7 @@ export function MangaCard({ manga }: MangaCardProps) {
 
         {/* Hover: Read button */}
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <span className={cn("text-primary-foreground text-sm font-bold px-4 py-2 rounded-full", bgSelected)}>
+          <span className={cn("text-primary-foreground text-sm font-bold px-4 py-2 rounded-full", bgButton)}>
             開く
           </span>
         </div>
@@ -47,7 +50,7 @@ export function MangaCard({ manga }: MangaCardProps) {
 
       {/* Info */}
       <div className="p-3">
-        <h2 className="text-yellow-800 font-bold text-sm leading-tight mb-1 text-balance">
+        <h2 className={cn("font-bold text-sm leading-tight mb-1 text-balance", titleColor)}>
           {manga.title}
         </h2>
         <p className="text-muted-foreground text-xs mb-2">{manga.additional}</p>
@@ -55,7 +58,7 @@ export function MangaCard({ manga }: MangaCardProps) {
           {manga.tag.slice(0, 2).map((g) => (
             <span
               key={g}
-              className="text-[10px] px-2 py-0.5 rounded-full bg-secondary text-secondary-foreground border border-border"
+              className={cn("text-[10px] px-2 py-0.5 rounded-full text-white border border-border", bgTag)}
             >
               {g}
             </span>

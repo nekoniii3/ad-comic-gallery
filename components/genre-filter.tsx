@@ -4,7 +4,8 @@ import { useMemo, useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { MangaCard } from '@/components/manga-card'
 import type { Manga } from '@/lib/manga-data'
-import WarmBeige, { partsColor } from "@/components/backgrounds/WarmBeige"
+// import WarmBeige, { partsColor } from "@/components/backgrounds/WarmBeige"
+import { Template, partsColor } from "@/components/template/Template"
 import { cn } from "@/lib/utils"
 
 const PAGE_SIZE = 15
@@ -28,10 +29,7 @@ export function GenreFilter({ mangaList, tagList }: GenreFilterProps) {
         : mangaList,
     [mangaList, activeGenre],
   )
-
-  
-  console.log(filtered)
-  
+ 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE))
 
   const paginated = useMemo(() => {
@@ -104,7 +102,7 @@ export function GenreFilter({ mangaList, tagList }: GenreFilterProps) {
         <div className="flex items-center justify-end my-5">
           <span className="text-muted-foreground text-sm">
             {/* {filtered.length} / {mangaList.length} 作品 */}
-             {filtered.length} 作品
+             {filtered.length} 項目
           </span>
         </div>
         {/* Pagination */}
