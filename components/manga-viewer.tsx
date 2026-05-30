@@ -182,7 +182,7 @@ export function MangaViewer({ manga }: MangaViewerProps) {
       >
         <div className="flex items-center px-4 py-3 bg-gradient-to-b from-black/80 to-transparent">
         {/* <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-b from-black/80 to-transparent"> */}
-          <div className="absolute left-1/2 -translate-x-1/2 gap-2">
+          <div className="absolute left-1/2 -translate-x-1/2 gap-2 max-md:mt-2">
             {/* <BookOpen className="w-4 h-4 text-muted-foreground" /> */}
             {/* タイトルのリンク */}
             {manga.itemPage === "" ? <h1 className="text-sm md:text-base font-bold text-foreground">{manga.title}</h1>
