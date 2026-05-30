@@ -185,13 +185,13 @@ export function MangaViewer({ manga }: MangaViewerProps) {
           <div className="absolute left-1/2 -translate-x-1/2 gap-2">
             {/* <BookOpen className="w-4 h-4 text-muted-foreground" /> */}
             {/* タイトルのリンク */}
-            {manga.itemPage === "" ? <h1 className="text-base font-bold text-foreground">{manga.title}</h1>
+            {manga.itemPage === "" ? <h1 className="text-sm md:text-base font-bold text-foreground">{manga.title}</h1>
             : <Link
               href={`${manga.itemPage}`}
               aria-label="商品ページ"
               target="_blank"
             >
-              <h1 className="text-sm font-bold text-foreground">{manga.title}</h1>
+              <h1 className="text-sm md:text-base font-bold text-foreground">{manga.title}</h1>
             </Link>}
           </div>
           <a

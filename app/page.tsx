@@ -10,6 +10,7 @@ import ArchitectCross from "@/components/template/ArchitectCross"
 import Simple from "@/components/template/Simple"
 
 export default async function HomePage() {
+
   const mangaList = await getMangaList()
   const tagList = await getTagList()
 
@@ -29,7 +30,7 @@ export default async function HomePage() {
         <section className="relative py-16 px-4 overflow-hidden">
           <div className="relative max-w-6xl mx-auto text-center">
             {/* 社会人サークル */}
-            <h1 className="text-4xl md:text-6xl leading-tight font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 pb-2">
+            <h1 className="text-3xl md:text-6xl leading-tight font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 pb-2">
                 文京区社会人サークル<br />{"「BSC」写真館"}
             </h1> 
             <p className="text-black text-base md:text-lg max-w-xl mx-auto leading-relaxed mt-4">

@@ -1,5 +1,6 @@
 import path from 'path'
 import fs from 'fs'
+import { JSONPATH } from '@/constants/config'
 
 export type MangaPage = {
   id: number
@@ -30,7 +31,7 @@ export async function getMangaList(): Promise<Manga[]> {
   // const raw = fs.readFileSync(filePath, 'utf-8')
   // return JSON.parse(raw) as Manga[]
 
-  const jsonPath = "https://gist.githubusercontent.com/settaro-001/e0d12279f3e0f7193d7019c41f624b51/raw"
+  const jsonPath = JSONPATH.IMAGE_DATA
 
   var raw;
 
@@ -53,7 +54,7 @@ export async function getMangaById(id: string): Promise<Manga | undefined> {
 
 export async function getTagList(): Promise<string[]> {
   // const filePath = path.join(process.cwd(), 'public', 'data', 'tag.json')
-  const jsonPath = "https://gist.githubusercontent.com/settaro-001/1980b7e6511474ba36eea63616248cd1/raw"
+  const jsonPath = JSONPATH.TAG_DATA
   // const raw = fs.readFileSync(filePath, 'utf-8')
   // console.log(JSON.parse(raw))
   // const tagList = JSON.parse(raw).map(function(item: any){
