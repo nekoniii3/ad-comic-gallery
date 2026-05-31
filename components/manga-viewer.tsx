@@ -6,6 +6,7 @@ import type { Manga } from '@/lib/manga-data'
 import { ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut, BookOpen } from 'lucide-react'
 import { partsColor } from "@/components/template/FloatingParticles";
 import Link from 'next/link'
+import { IMGPATH } from '@/constants/config'
 
 type MangaViewerProps = {
   manga: Manga
@@ -27,7 +28,7 @@ export function MangaViewer({ manga }: MangaViewerProps) {
     const preload = (index: number) => {
       if (index >= 0 && index < totalPages) {
         const img = new window.Image()
-        img.src = manga.imageData[index].imgPath
+        img.src = manga.imageData[index].imgPath.replace("[imgPath]", IMGPATH)
       }
     }
     preload(currentPage - 1)
@@ -127,7 +128,7 @@ export function MangaViewer({ manga }: MangaViewerProps) {
           } ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}
         >
           <Image
-            src={page.imgPath}
+            src={page.imgPath.replace("[imgPath]", IMGPATH)}
             alt={page.alt}
             fill={!isZoomed}
             width={isZoomed ? 1200 : undefined}
@@ -238,7 +239,7 @@ export function MangaViewer({ manga }: MangaViewerProps) {
                 aria-label={`${i + 1}ページ目`}
               >
                 <Image
-                  src={p.imgPath}
+                  src={p.imgPath.replace("[imgPath]", IMGPATH)}
                   alt={p.alt}
                   fill
                   className="object-cover"

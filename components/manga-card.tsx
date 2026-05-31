@@ -6,6 +6,7 @@ import type { Manga } from '@/lib/manga-data'
 // import { partsColor } from "@/components/template/FloatingParticles";
 import { Template, partsColor } from "@/components/template/Template"
 import { cn } from "@/lib/utils"
+import { IMGPATH } from '@/constants/config'
 
 type MangaCardProps = {
   manga: Manga
@@ -29,7 +30,7 @@ export function MangaCard({ manga }: MangaCardProps) {
         aria-label={`${manga.title}を開く`}
       >
         <Image
-          src={manga.coverImage}
+          src={manga.coverImage.replace("[imgPath]", IMGPATH)}
           alt={manga.title}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-105"
